@@ -1,0 +1,110 @@
+/* FONTS */
+
+@font-face {
+    font-family: "Epilogue Light";
+    src: url('Assets/fonts/epilogue-2/Epilogue-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bevan";
+    src: url('Assets/fonts/Bevan/Bevan-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+body{
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: "Epilogue Light";
+    color: #8E7ADA;
+}
+
+.logo > h3{
+    font-size: 12px;
+    width: 20px;
+}
+
+nav img{
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-family: "Epilogue Light";
+    list-style: none;
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+ul a{
+    text-decoration: none;
+    font-family: "Epilogue Light";
+    background-color: #ffffff;
+    color: #8E7ADA;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contactUs{
+    color: #8E7ADA;
+    cursor: pointer;
+}
+
+.home-border{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.border{
+    background-color: #8E7ADA;
+    width: 30px;
+    height: 2px;
+    margin-top: -8px;
+    margin-left: 30px;
+}
+
+nav a button{
+    font-family: "Epilogue Light";
+    background-color: #ffffff;
+    color: #8E7ADA;
+    border: 1px solid #8E7ADA;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+#donate-btn:hover{
+    background-color: #8E7ADA;
+    color: #ffffff;
+}
+
+hr{
+    width: 95%;
+    margin: 0px auto;
+    color: #a7a2a297;
+}
