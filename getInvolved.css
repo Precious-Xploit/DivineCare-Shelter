@@ -81,13 +81,13 @@ ul a{
 
 .getInvolved{
     cursor: pointer;
-    margin-bottom: -10px;
+    margin-bottom: -7px;
 }
 
 .home-border{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .border{
@@ -268,7 +268,7 @@ hr{
     padding-top: 100px 50px;
 }
 
-.team-sec h3{
+.team-sec > h3{
     font-family: "Bevan";
     text-align: center;
     font-size: 40px;
@@ -276,6 +276,46 @@ hr{
     color: #8E7ADA;
 }
 
+.team-photos{
+    display: grid;
+}
+
+.top-team{
+    display: flex;
+    justify-content: center;
+    gap: 149px;
+}
+
+.bottom-team{
+    display: flex;
+    justify-content: center;
+    gap: 149px;
+}
+
+.team-size{
+    width: 300px;
+    font-family: "Epilogue Light";
+}
+
+.team-size img{
+    padding-left: 95px;
+}
+
+.team-size h3{
+    text-align: center;
+    font-family: "Epilogue Light";
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.team-size p{
+    line-height: 25px;
+}
+
+.team-size img{
+    width: 100px;
+    justify-content: center;
+}
 
 
 /* LAST SECTION */
