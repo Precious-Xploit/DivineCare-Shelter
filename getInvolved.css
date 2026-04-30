@@ -19,13 +19,25 @@
 
 body{
     margin: 0px;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.ngo{
+    max-width: 1280px;
+    display: grid;
+    justify-content: center;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 60;
+    padding-left: 10px;
 }
 
 .logo{
@@ -33,6 +45,7 @@ nav{
     align-items: center;
     font-family: "Epilogue Light";
     color: #8E7ADA;
+    margin-left: 25px;
 }
 
 .logo > h3{
@@ -74,15 +87,14 @@ ul a{
 .home-border{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .border{
     background-color: #8E7ADA;
-    width: 30px;
+    width: 20px;
     height: 2px;
-    margin-top: -8px;
-    margin-left: 35px;
+    margin-left: 40px;
 }
 
 nav a button{
@@ -95,7 +107,7 @@ nav a button{
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
-
+    margin-right: 60px;
 }
 
 #donate-btn:hover{
@@ -104,7 +116,237 @@ nav a button{
 }
 
 hr{
-    width: 95%;
+    width: 100%;
     margin: 0px auto;
     color: #a7a2a297;
 }
+
+/* GET INVOLVED */
+
+.involved{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+.involved-sec{
+    width: 400px;
+}
+
+.donate-sec{
+    position: relative;
+    top: 10px;
+}
+
+.donate-text{
+    padding: 20px;
+    font-family: "Epilogue Light";
+    border: 2px solid #8E7ADA;
+    border-left: 1px solid #8E7ADA;
+    border-right: 1px solid #8E7ADA;
+    border-radius: 5px;
+}
+
+.donate-text h3{
+    font-family: "Bevan";
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.donate-text p{
+    line-height: 25px;
+}
+
+
+/* VOLUNTEER */
+
+.volunteer{
+    position: relative;
+    left: 130px;
+    top: 100px;
+}
+
+.volunteer-text{
+    border: 2px solid #8E7ADA;
+    border-left: 1px solid #8E7ADA;
+    border-right: 1px solid #8E7ADA;
+    padding: 20px;
+    font-family: "Epilogue Light";
+    border-radius: 5px;
+}
+
+.volunteer-text p{
+    line-height: 25px;
+}
+
+.volunteer-text h3{
+    font-family: "Bevan";
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.volunteer h3{
+    font-family: "Bevan";
+}
+
+/* PARTNER */
+.partner{
+    position: relative;
+    top: 200px;
+}
+
+.partner-and-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.partner-and-img img{
+    width: 30px;
+    height: 30px;
+}
+
+.partner-text{
+    border: 2px solid #8E7ADA;
+    border-left: 1px solid #8E7ADA;
+    border-right: 1px solid #8E7ADA;
+    padding: 20px;
+    font-family: "Epilogue Light";
+    border-radius: 5px;
+}
+
+.partner-text p{
+    line-height: 25px;
+}
+
+.partner-text h3{
+    font-family: "Bevan";
+    letter-spacing: 5px;
+    text-align: center;
+    
+}
+
+.partner-and-img >h3{
+    font-family: "Epilogue Light";
+    color: #8E7ADA;
+    letter-spacing: 4px;
+    
+}
+
+.involved-img{
+    position: relative;
+    top: 50px;
+    width: 400px;
+    padding-right: 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.involved-img img{
+    width: 450px;
+    filter: brightness(20%);
+}
+
+.cta{
+    background-color: #8E7ADA;
+    font-family: "Epilogue Light";
+    font-size: 12px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+/* TEAM SECTION */
+.team-sec{
+    padding-top: 100px 50px;
+}
+
+.team-sec h3{
+    font-family: "Bevan";
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: #8E7ADA;
+}
+
+
+
+/* LAST SECTION */
+.last-sec{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 100px 10px 0px 10px;
+    font-family: "Epilogue Light";
+    gap: 90px;
+    margin: 100px 55px 0px 40px;
+
+}
+
+.last-sec img{
+    width: 100px;
+}
+
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.text-logo h3{
+    color: #8E7ADA;
+    font-size: 15px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.last-sec-list{
+    font-size: 12px;
+}
+
+.last-sec-list li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.last-sec-list a{
+    color: #000000;
+    text-align: left;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* FOOTER */
+footer{
+    padding: 0px 60px;
+    font-family: "Epilogue Light";
+    font-size: 12px;
+    margin-top: -30px;
+}
+
+hr{
+    color: #8E7ADA;
+    width: 100%;
+}
+
+/* RESPONSIVE DESIGN */
+/* MOBILE */
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+/* TABLET */

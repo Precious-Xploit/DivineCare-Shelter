@@ -19,13 +19,25 @@
 
 body{
     margin: 0px;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.ngo{
+    width: 1280px;
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    position: fixed;
+    background-color: #ffffff;
+    width: 1280px;
+    z-index: 60;
 }
 
 .logo{
@@ -33,6 +45,7 @@ nav{
     align-items: center;
     font-family: "Epilogue Light";
     color: #8E7ADA;
+    margin-left: 25px;
 }
 
 .logo > h3{
@@ -66,9 +79,9 @@ ul a{
     text-align: center;
 }
 
-.contactUs{
-    color: #8E7ADA;
+.getInvolved{
     cursor: pointer;
+    margin-bottom: -10px;
 }
 
 .home-border{
@@ -95,7 +108,7 @@ nav a button{
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
-
+    margin-right: 40px;
 }
 
 #donate-btn:hover{
@@ -104,7 +117,10 @@ nav a button{
 }
 
 hr{
-    width: 95%;
+    width: 100%;
     margin: 0px auto;
     color: #a7a2a297;
 }
+
+
+

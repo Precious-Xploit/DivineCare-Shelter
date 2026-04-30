@@ -18,7 +18,14 @@
 
 
 body{
-    margin: 0px;
+    margin: 0%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.ngo{
+    width: 1280px;
+    display: flex;
 }
 
 nav{
@@ -88,7 +95,6 @@ nav a button{
 }
 
 hr{
-    width: 95%;
-    margin: 0px auto;
+    width: 100%;
     color: #a7a2a297;
 }

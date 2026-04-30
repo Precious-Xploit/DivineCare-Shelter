@@ -16,16 +16,26 @@
     font-style: normal;
 }
 
-
 body{
-    margin: 0px;
+margin: 0%;
+overflow-x: hidden;
+}
+
+.ngo{
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 60;
+    padding-left: 10px;
 }
 
 .logo{
@@ -33,6 +43,7 @@ nav{
     align-items: center;
     font-family: "Epilogue Light";
     color: #8E7ADA;
+    margin-left: 25px;
 }
 
 .logo > h3{
@@ -95,7 +106,7 @@ nav a button{
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
-
+    margin-right: 60px;
 }
 
 #donate-btn:hover{
@@ -104,7 +115,7 @@ nav a button{
 }
 
 hr{
-    width: 95%;
+    width: 100%;
     margin: 0px auto;
     color: #a7a2a297;
 }
@@ -115,11 +126,15 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-top: 50px;
 }
 
 .intro{
     width: 500px;
+    padding-left: 5px;
 }
 
 .intro h3{
@@ -128,7 +143,10 @@ hr{
     font-size: 45px;
     margin-bottom: 20px;
     line-height: 50px;
-    
+}
+
+.intro span{
+    color: #000000;
 }
 
 .intro p{
@@ -169,41 +187,350 @@ hr{
     border-radius: 20px;
 }   
 
-/* .hero-section{
+/* ABOUT SECTION */
+
+.about{
     display: grid;
-    justify-content: center;
-    width: 1280px;
+    margin-top: 50px;
 }
 
-.intro{
-    width: 1000px;
-}
-
-.intro h3{
-    font-family: "Bevan";
-    color: #8E7ADA;
-    font-size: 55px;
+.about h3{
     text-align: center;
-    margin-bottom: -20px;
+    font-weight: 600;
+    color: #8E7ADA;
+    font-family: "Bevan";
+    font-size: 30px;
 }
 
-.intro p{
+.img-text-bg{
+    background-color: #d2caf03b;
+    position: relative;
+    margin: -5px;
+    gap: 100px;
+}
+
+.img-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px 100px 150px;
+    gap: 100px;
+}
+
+.img-text p{
+    width: 500px;
     font-family: "Epilogue Light";
     font-size: 15px;
-    color: #252424;
     line-height: 25px;
-    width: 600px;
-    padding-left: 200px;
-    padding-bottom: 20px;
+    border-left: 2px solid #da7ad565;
+    border-right: 2px solid #8E7ADA;
+    border-bottom: 2px solid #8f7bde7f;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
-.children{
-    display: grid;
+.p-h{
+    padding-left: 5px;
+    margin-top: -10px;
+}
+
+.p-h h4{
+    font-family: "Bevan";
+    color: #252424;
+    text-align: center;
+}
+
+.img-text img{
+    padding-top: 20px;
+    width:  400px;
+    border: none;
+}
+
+/* NUMBERS */
+
+.impact{
+    padding:100px 0px;
+}
+
+.impact > h3{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Bevan";
+    color: #8E7ADA;
+}
+
+.number{
+    display: flex;
     justify-content: center;
+    gap: 100px;
+    align-items: center;
 }
 
-.children img{
-    height: 500px;
-    margin: 0px auto;
-    border-radius: 30px;
-}    */
+.number h4{
+    font-family: "Epilogue Light";
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: #8E7ADA;
+    border: 1px solid #8E7ADA;
+    width: 150px;
+    padding: 20px 0px;
+}
+
+.number p{
+    font-family: "Epilogue Light";
+    font-size: 13px;
+     text-align: center;
+     margin-top: -30px;
+}
+
+
+/* WHAT WE DO */
+
+.what-we-do{
+    text-align: center;
+    font-family: "Bevan";
+    color: #8E7ADA;
+    margin-bottom: -50px;
+    font-size: 30px;
+}
+
+.the-img{
+    display: grid;
+    position: relative;
+    margin-left: 60px;
+    margin-top: -20px;
+    z-index: 20px;
+    gap: 5px;
+}
+
+.top{
+    display: flex;
+    object-fit: cover;
+    gap: 7px;
+    position: relative;
+}
+
+.gradient{
+    position: relative;
+    top: 10px;
+}
+
+.gradient > img{
+    position: absolute;
+    width: 590px;
+    border-radius: 22px;
+}
+
+.gradient-two{
+    position: relative;
+    bottom: 10px;
+    left: 180px;
+}
+
+
+.underlay{
+    position: absolute;
+    z-index: 30px;
+    width: 599px;
+    height: 327px;
+    top: 112px;
+    background-color: #000000a6;
+    border-radius: 6px;
+    border-radius: 15px;
+}
+
+.top img{
+    position: absolute;
+    width: 600px;
+    height: 330px;
+    filter: brightness(20%);
+    z-index: 30;
+    top: 110px;
+}
+
+.gradient-two > img{
+    position: absolute;
+    top: 130px;
+    width: 590px;
+    height: 329px;
+    border-radius: 15px;
+}
+
+.bottom{
+    display: flex;
+    object-fit: cover;
+    gap: 5px;
+    position: relative;
+    top: 173px;
+}
+
+.underlay-two{
+    position: absolute;
+    z-index: 30px;
+    width: 599px;
+    top: 160px;
+    background-color: #000000a6;
+    border-radius: 15px;
+}
+
+.bottom img{
+    position: absolute;
+    /* width: 600px;
+    height: 600px; */
+    filter: brightness(20%);
+}
+
+.other-gradient > img{
+    border-radius: 15px;
+    top: 132px;
+    width: 599px;
+    height: 298px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.another-gradient > img{
+    border-radius: 15px;
+    top: 132px;
+    width: 594px;
+    height: 298px;
+    object-fit: cover;
+    left: 1.5px;
+}
+.another-gradient{
+    position: relative;
+    left: 180px;
+}
+
+.just-text{
+    position: relative;
+    top: 290px;
+    color: #ffffff;
+    width: 420px;
+    left: 50px;
+    font-family: "Epilogue Light";
+    z-index: 45;
+}
+
+.just-text h3{
+    font-size: 30px;
+}
+
+.just-text p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* TESTIMONIES */
+.testimony{
+    text-align: center;
+    font-family: "Bevan";
+    color: #8E7ADA;
+    font-size: 30px;
+    margin-top: 600px;
+}
+
+.testimonial{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* max-width: 1400px; */
+    gap: 10px;
+}
+
+.testify{
+    border: 1px solid #8E7ADA;
+    min-width: 300px;
+    border-radius: 5px;
+    font-family: "Epilogue Light";
+    padding:10px;
+    background-color: #d2caf03b;
+}
+
+.testify h3{
+    font-family: "Bevan";
+    font-size: 20px;
+}
+
+.testify p{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+/* LAST SECTION */
+.last-sec{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 100px 10px 0px 10px;
+    font-family: "Epilogue Light";
+    gap: 90px;
+    margin: 100px 55px 0px 40px;
+
+}
+
+.last-sec img{
+    width: 100px;
+}
+
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.text-logo h3{
+    color: #8E7ADA;
+    font-size: 15px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.last-sec-list{
+    font-size: 12px;
+}
+
+.last-sec-list li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.last-sec-list a{
+    color: #000000;
+    text-align: left;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* FOOTER */
+footer{
+    padding: 0px 60px;
+    font-family: "Epilogue Light";
+    font-size: 12px;
+    margin-top: -30px;
+}
+
+hr{
+    color: #8E7ADA;
+    width: 100%;
+}
+
+/* RESPONSIVE DESIGN */
+/* MOBILE */
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+/* TABLET */
