@@ -98,3 +98,114 @@ hr{
     width: 100%;
     color: #a7a2a297;
 }
+
+
+
+
+.last-part{
+    /* background-color: #000000; */
+    color: #ffffff;
+}
+
+.just-text-sec{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 300px;
+    align-items: center;
+    background-color: #252424;
+    
+}
+
+.just-text-sec h3{
+    font-family: "Epilogue Light";
+    font-size: 30px;
+    width: 200px;
+    line-height: 40px;
+}
+
+
+.just-text-sec p{
+    width: 500px;
+    font-family: "Epilogue Light";
+    line-height: 30px;
+}
+
+
+
+
+/* LAST SECTION */
+.last-sec{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    font-family: "Epilogue Light";
+    gap: 90px;
+    margin: 0px 55px 0px 40px;
+    color: #000000;
+}
+
+.last-sec img{
+    width: 100px;
+}
+
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.text-logo h3{
+    color: #8E7ADA;
+    font-size: 15px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.last-sec-list{
+    font-size: 12px;
+
+}
+
+.last-sec-list li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.last-sec-list a{
+    color: #000000;
+    text-align: left;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* FOOTER */
+footer{
+    padding: 0px 60px;
+    font-family: "Epilogue Light";
+    font-size: 12px;
+    margin-top: -30px;
+}
+
+hr{
+    color: #8E7ADA;
+    width: 100%;
+}
+
+/* RESPONSIVE DESIGN */
+/* MOBILE */
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+/* TABLET */

@@ -69,7 +69,7 @@ nav ul {
 ul a{
     text-decoration: none;
     font-family: "Epilogue Light";
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     color: #8E7ADA;
     padding: 10px;
     font-size: 12px;
@@ -434,10 +434,11 @@ hr{
 
 .testimonial{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
     scrollbar-width: none;
+    padding-left: 2px;
     /* max-width: 1400px; */
     gap: 10px;
 }
@@ -462,16 +463,52 @@ hr{
 }
 
 
+
+/* LAST PART */
+.last-part{
+    /* background-color: #000000; */
+    color: #ffffff;
+}
+
+.just-text-sec{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 300px;
+    align-items: center;
+    background-color: #252424;
+    
+}
+
+.just-text-sec h3{
+    font-family: "Epilogue Light";
+    font-size: 30px;
+    width: 200px;
+    line-height: 40px;
+}
+
+
+.just-text-sec p{
+    width: 500px;
+    font-family: "Epilogue Light";
+    line-height: 30px;
+}
+
+
+
+
 /* LAST SECTION */
 .last-sec{
     display: flex; 
     justify-content: space-between;
     margin-top: 20px;
-    padding: 100px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
     font-family: "Epilogue Light";
     gap: 90px;
-    margin: 100px 55px 0px 40px;
-
+    margin: 0px 55px 0px 40px;
+    color: #000000;
 }
 
 .last-sec img{
@@ -494,6 +531,7 @@ hr{
 
 .last-sec-list{
     font-size: 12px;
+
 }
 
 .last-sec-list li{

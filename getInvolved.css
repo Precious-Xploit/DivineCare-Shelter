@@ -121,12 +121,62 @@ hr{
     color: #a7a2a297;
 }
 
+/* HERO SECTION */
+
+
+.hero-section{
+    position: relative;
+    display: flex;
+    background-image: url(Assets/images/CTA.svg);
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 20px;
+    left: 350px;
+    width: 600px;
+    text-align: center;
+    font-family: "Epilogue Light";
+}
+
+.main-container span{
+    color: #8E7ADA;
+    border-radius: 5px;
+}
+
+.main-container h3{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.main-container button{
+    background-color: #ffffff;
+    border: none;
+    width: 100px;
+    padding: 12px;
+    border-radius: 5px;
+    color: #8E7ADA;
+    cursor: pointer;
+}
+
+
+
 /* GET INVOLVED */
 
 .involved{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 100px 50px;
+    gap: 50px;
 }
 
 .involved-sec{
@@ -162,8 +212,7 @@ hr{
 
 .volunteer{
     position: relative;
-    left: 130px;
-    top: 100px;
+    top: 10px;
 }
 
 .volunteer-text{
@@ -173,6 +222,7 @@ hr{
     padding: 20px;
     font-family: "Epilogue Light";
     border-radius: 5px;
+    height: 495px;
 }
 
 .volunteer-text p{
@@ -192,7 +242,7 @@ hr{
 /* PARTNER */
 .partner{
     position: relative;
-    top: 200px;
+    top: 10px;
 }
 
 .partner-and-img{
@@ -214,6 +264,8 @@ hr{
     padding: 20px;
     font-family: "Epilogue Light";
     border-radius: 5px;
+    height: 495px;
+    margin-bottom: 10px;
 }
 
 .partner-text p{
@@ -248,7 +300,7 @@ hr{
 
 .involved-img img{
     width: 450px;
-    filter: brightness(20%);
+    filter: brightness(30%) contrast(0.8);
 }
 
 .cta{
@@ -263,9 +315,22 @@ hr{
     border: none;
 }
 
+.cta-btn{
+    background-color: #8E7ADA;
+    font-family: "Epilogue Light";
+    font-size: 12px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
 /* TEAM SECTION */
 .team-sec{
-    padding-top: 100px 50px;
+    padding-top: 150px;
 }
 
 .team-sec > h3{
@@ -288,6 +353,7 @@ hr{
 
 .bottom-team{
     display: flex;
+    margin-top: 50px;
     justify-content: center;
     gap: 149px;
 }
@@ -310,6 +376,7 @@ hr{
 
 .team-size p{
     line-height: 25px;
+    text-align: center;
 }
 
 .team-size img{
@@ -318,16 +385,77 @@ hr{
 }
 
 
+/* ONLY TEXT */
+
+.gallary h2{
+    text-align: center;
+    color: #8E7ADA;
+    font-size: 30px;
+    font-family: "Bevan";
+}
+
+.only-img{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-left: 2px;
+}
+
+.only-img img{
+    object-fit: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+/* LAST PART */
+
+.last-part{
+    /* background-color: #000000; */
+    color: #ffffff;
+}
+
+.just-text-sec{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 300px;
+    align-items: center;
+    background-color: #252424;
+    
+}
+
+.just-text-sec h3{
+    font-family: "Epilogue Light";
+    font-size: 30px;
+    width: 200px;
+    line-height: 40px;
+}
+
+
+.just-text-sec p{
+    width: 500px;
+    font-family: "Epilogue Light";
+    line-height: 30px;
+}
+
+
+
+
 /* LAST SECTION */
 .last-sec{
     display: flex; 
     justify-content: space-between;
     margin-top: 20px;
-    padding: 100px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
     font-family: "Epilogue Light";
     gap: 90px;
-    margin: 100px 55px 0px 40px;
-
+    margin: 0px 55px 0px 40px;
+    color: #000000;
 }
 
 .last-sec img{
@@ -350,6 +478,7 @@ hr{
 
 .last-sec-list{
     font-size: 12px;
+
 }
 
 .last-sec-list li{
