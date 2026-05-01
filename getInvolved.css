@@ -166,6 +166,7 @@ hr{
     border-radius: 5px;
     color: #8E7ADA;
     cursor: pointer;
+    border: 1px solid #8E7ADA;
 }
 
 
