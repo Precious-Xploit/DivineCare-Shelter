@@ -17,25 +17,32 @@
 }
 
 body{
-margin: 0%;
-overflow-x: hidden;
+    width: 1280px;
+    margin: 0px auto;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 .ngo{
-    margin: 0px auto;
+    /* width: 1280px;
+    margin: 0px auto; */
     display: grid;
-    justify-content: center;
+    justify-content: center; 
 }
 
 nav{
+    /* max-width: 100%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: safe center;
     align-items: center;
     position: fixed;
     background-color: #ffffff;
-    width: 100%;
+    width: 1280px;
+    margin: 0px auto;
     z-index: 60;
-    padding-left: 10px;
+    /* paddingg: 0px 10px 0px 30px; */
+    gap: 280px;
+
 }
 
 .logo{
@@ -43,7 +50,7 @@ nav{
     align-items: center;
     font-family: "Epilogue Light";
     color: #8E7ADA;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
 .logo > h3{
@@ -69,7 +76,7 @@ nav ul {
 ul a{
     text-decoration: none;
     font-family: "Epilogue Light";
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     color: #8E7ADA;
     padding: 10px;
     font-size: 12px;
@@ -98,20 +105,21 @@ ul a{
 
 nav a button{
     font-family: "Epilogue Light";
-    background-color: #ffffff;
-    color: #8E7ADA;
-    border: 1px solid #8E7ADA;
+    background-color: #8E7ADA;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     width: 100px;
     border-radius: 5px;
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
-    margin-right: 60px;
+    /* margin-right: 20px; */
 }
 
 #donate-btn:hover{
-    background-color: #8E7ADA;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
 }
 
 hr{
@@ -165,9 +173,9 @@ hr{
 .btn button{
     width: 100px;
     text-align: center;
-    background-color: #ffffff;
-    color: #8E7ADA;
-    border: 1px solid #8E7ADA;
+    background-color: #8E7ADA;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     padding: 12px;
     font-size: 12px;
     border-radius: 5px;
@@ -176,9 +184,9 @@ hr{
 }
 
 .the-btn:hover{
-    background-color: #8E7ADA;
-    color: #ffffff;
-    
+    background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
 }
 
 .hero-section img{
@@ -482,11 +490,16 @@ hr{
     
 }
 
+.just-text-sec a{
+    text-decoration: none;
+}
+
 .just-text-sec h3{
     font-family: "Epilogue Light";
     font-size: 30px;
     width: 200px;
     line-height: 40px;
+    color: #ffffff;
 }
 
 
@@ -554,7 +567,8 @@ footer{
     padding: 0px 60px;
     font-family: "Epilogue Light";
     font-size: 12px;
-    margin-top: -30px;
+    margin-top: 0px;
+    color: #000000;
 }
 
 hr{

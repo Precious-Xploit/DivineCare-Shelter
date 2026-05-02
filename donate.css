@@ -18,7 +18,8 @@
 
 
 body{
-    margin: 0%;
+    width: 1280px;
+    margin: 0px auto;
     height: 100vh;
     overflow-x: hidden;
 }
@@ -100,8 +101,133 @@ hr{
 }
 
 
+/* PAYMENT SECTION */
+
+.payment-section{
+    display: grid;
+    justify-content: center;
+    font-family: "Epilogue Light";
+    padding: 100px 0px;
+    background-color: rgba(237, 240, 240, 0.477);
+    margin-top: -10px;
+}
+
+.payment-type{
+    text-align: center;
+}
+
+.payment-type h3{
+    font-size: 25px;
+}
+
+.payment-type p{
+    font-size: 20px;
+}
+
+.name-img{
+    display: flex;
+    gap: 30px;
+}
+
+.name-img a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.btc{
+    display: flex;
+    font-size: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 3px solid #8d7ada5a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    /* display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #64626271;
+    border-radius: 10px;
+    margin-bottom: 20px; */
+}
+
+.btc img{
+    width: 50px;
+    border-radius: 5px;
+}
+
+.btc:hover{
+    background-color: #e8e5f45a;
+    transform: scaleX(1.01);
+    transition: 0.2s;
+}
+
+.trc{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #8d7ada5a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.trc img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.trc:hover{
+    background-color: #e8e5f45a;
+    transform: scaleX(1.01);
+    transition: 0.2s;
+}
+
+.other{
+   display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #8d7ada5a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.other img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.other:hover{
+    background-color: #e8e5f45a;
+    transform: scaleX(1.01);
+    transition: 0.2s;
+}
+
+.crypto{
+    font-family: "Epilogue Light";
+}
+
+.crypto button{
+    border: 2px solid #8E7ADA;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #8E7ADA;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 
+
+
+/* LAST PART */
 .last-part{
     /* background-color: #000000; */
     color: #ffffff;
@@ -110,7 +236,8 @@ hr{
 .just-text-sec{
     display: flex;
     justify-content: space-between;
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
+    margin-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
     height: 300px;
@@ -191,7 +318,7 @@ footer{
     padding: 0px 60px;
     font-family: "Epilogue Light";
     font-size: 12px;
-    margin-top: -30px;
+    color: #000000;
 }
 
 hr{
