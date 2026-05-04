@@ -377,40 +377,51 @@ button:hover{
 .top-team{
     display: flex;
     justify-content: center;
-    gap: 149px;
+    gap: 30px;
+    /* gap: 100px; */
 }
 
 .bottom-team{
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    gap: 149px;
+    gap: 30px;
+    /* gap: 100px; */
 }
 
 .team-size{
+    background-color: #beb4e43a;
     width: 300px;
+    height: 400px;
     font-family: "Epilogue Light";
+    justify-content: center;
 }
 
 .team-size img{
-    padding-left: 95px;
+    /* padding-left: 95px; */
 }
 
 .team-size h3{
+    border: 2px solid blue;
+    padding-top: 10px;
     text-align: center;
     font-family: "Epilogue Light";
     font-size: 15px;
     font-weight: 700;
 }
 
-.team-size p{
-    margin-top: -50px;
+/* .team-size p{
+    margin-top: -20px;
     line-height: 25px;
     text-align: center;
-}
+    border: 2px solid yellow;
+} */
 
 .team-size img{
-    width: 100px;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
     justify-content: center;
 }
 

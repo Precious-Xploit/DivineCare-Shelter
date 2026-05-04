@@ -25,15 +25,20 @@ body{
 }
 
 .ngo{
-    width: 1280px;
-    display: flex;
+    display: grid;
+    justify-content: center; 
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+    justify-content: safe center;
     align-items: center;
-    padding: 0px 30px;
+    position: fixed;
+    background-color: #ffffff;
+    width: 1280px;
+    margin: -10px auto;
+    z-index: 60;
+    gap: 280px;
 }
 
 .logo{
@@ -92,12 +97,7 @@ nav a button{
 #donate-btn:hover{
     background-color: #ffffff;
     color: #8E7ADA;
-    border: 1px solid #8E7ADA;
-}
-
-hr{
-    width: 100%;
-    color: #a7a2a297;
+    border: 2px solid #8E7ADA;
 }
 
 
@@ -136,22 +136,14 @@ hr{
 
 .btc{
     display: flex;
-    font-size: 15px;
-    background-color: #ffffff;
-    padding: 20px;
-    border: 3px solid #8d7ada5a;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    /* display: flex;
     align-items: center;
     font-size: 15px;
     justify-content: space-between;
     padding: 20px;
     background-color: #ffffff;
-    border: 3px solid #64626271;
+    border: 3px solid #8d7ada5a;
     border-radius: 10px;
-    margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 .btc img{
@@ -190,10 +182,10 @@ hr{
 
 .other{
    display: flex;
-    align-items: center;
+    /* align-items: center; */
     font-size: 15px;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    padding: 20px; 
     background-color: #ffffff;
     border: 3px solid #8d7ada5a;
     border-radius: 10px;
@@ -211,6 +203,10 @@ hr{
     transition: 0.2s;
 }
 
+.other p{
+    text-align: center;
+}
+
 .crypto{
     font-family: "Epilogue Light";
 }
@@ -224,6 +220,18 @@ hr{
     border-radius: 5px;
 }
 
+.lock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Epilogue Light";
+}
+
+.lock img{
+    width: 20px;
+    margin-bottom: 4px;
+}
 
 
 

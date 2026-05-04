@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/donate.css">
     <title>DivineCare Shelter</title>
-</head>
 
+</head>
     <body>
         <nav>
             <div class="logo">
@@ -32,28 +32,31 @@
                 <div class="btc">
                     <div class="name-img">
                         <img src="Assets/images/btc.jpg" alt="">
-                        <p>Bitcoin</p>
+                        <p id="btc-address">Bitcoin</p>
                     </div>
-                    
-                    <button>copy address</button>
+                    <button id="btn" data-address="bc1qgynu5qaxgh3nxgrmfcaw9790jsekvtaae44twc">copy address</button>
                 </div>
 
                 <div class="trc">
                     <div class="name-img">
                         <img src="Assets/images/trc.jpg" alt="">
-                        <p>USDT TRC20</p>
+                        <p id="trc-address">USDT TRC20</p>
                     </div>
-                    <button>copy address</button>
+                    <button id="btn-two" data-address="TP6qtdVJYUdRTkSvxGg1PxxvHYau9g7iRX">copy address</button>
                 </div>
 
                 <div class="other">
                     <div class="name-img">
-                        <img src="Assets/images/trc.jpg" alt="">
+                        <!-- <img src="Assets/images/trc.jpg" alt=""> -->
                         <a href="mailto:support@divinecareshelter.com"><p>Other Payment Method</p></a>
                     </div>
-                    <button>copy address</button>
                 </div>
 
+                <div class="lock">
+                    <img src="Assets/images/lock.svg" alt="">
+                    <p>Your payment information is secured and encrypted.</p>
+                </div>
+                
             </div>
         </section>
 
@@ -107,4 +110,5 @@
         </section>
     </body>
 
+    <script src="donate.js"></script>
 </html>
