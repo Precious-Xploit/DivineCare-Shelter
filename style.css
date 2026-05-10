@@ -625,14 +625,19 @@ hr{
     .nav-two{
         display: flex;
         position: fixed;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
         align-items: center;
         background-color: #ffffff;
         justify-content: space-between;
-        width: 95%;
+        width: calc(100% - 20px);
+        max-width: 460px;
+        box-sizing: border-box;
         margin: 0px auto;
         font-family: "Epilogue Light";
         z-index: 60;
-        padding: 0px 20px 0px 10px;
+        padding: 0px 10px;
         /* background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); */
@@ -658,6 +663,7 @@ hr{
     .menu{
         display: flex;
         gap: 10px;
+        align-items: center;
     }
 
     .menu img{
@@ -675,6 +681,77 @@ hr{
     font-size: 9px;
     cursor: pointer;
     /* margin-right: 20px; */
+}
+
+.menu .mobile-menu-toggle{
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border: 1px solid rgba(142, 122, 218, 0.3);
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.menu .mobile-menu-toggle img{
+    width: 20px;
+}
+
+.menu .mobile-donate-btn:hover,
+.menu .mobile-menu-toggle:hover{
+    background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+}
+
+.mobile-nav-links{
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 10px;
+    right: 10px;
+    display: grid;
+    gap: 4px;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid rgba(142, 122, 218, 0.18);
+    border-radius: 8px;
+    box-shadow: 0px 16px 30px rgba(32, 24, 61, 0.14);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+}
+
+.mobile-nav-open .mobile-nav-links{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0px);
+}
+
+.mobile-nav-links a{
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0px 12px;
+    color: #8E7ADA;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.mobile-nav-links a:hover,
+.mobile-nav-links a.active{
+    background-color: rgba(142, 122, 218, 0.1);
+}
+
+.mobile-menu-toggle:focus-visible,
+.mobile-nav-links a:focus-visible{
+    outline: 2px solid #8E7ADA;
+    outline-offset: 2px;
 }
 
 #donate-btn:hover{
