@@ -1302,23 +1302,23 @@ hr{
 }
 
 .ngo{
-    /* width: 1280px;
-    margin: 0px auto; */
+    max-width: 1200px;
+    margin: 0px auto;
     display: grid;
     justify-content: center; 
 }
 
 nav{
-    /* max-width: 100%; */
+    max-width: 1200px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: fixed;
     background-color: #ffffff;
-    margin: 0px auto;
     z-index: 60;
-    /* paddingg: 0px 10px 0px 30px; */
-    gap: 75px;
+    padding: 0px 0px 0px 30px;
+    gap: 90px;
+
 
 }
 
@@ -1327,17 +1327,17 @@ nav{
     align-items: center;
     font-family: "Epilogue Light";
     color:  #8E7ADA;
-    margin-left: 15px;
+    margin: 0px;
     /* margin-left: 25px; */
 }
 
 .logo > h3{
     font-size: 12px;
-    width: 20px;
+    max-width: 20px;
 }
 
 nav img{
-    width: 50px;
+    max-width: 50px;
 }
 
 nav ul {
@@ -1356,7 +1356,7 @@ ul a{
     font-family: "Epilogue Light";
     background-color: #ffffff;
     color:  #8E7ADA;
-    padding: 10px;
+    padding: 0px;
     font-size: 12px;
     cursor: pointer;
     text-align: center;
@@ -1392,6 +1392,7 @@ nav a button{
     font-size: 12px;
     cursor: pointer;
     /* margin-right: 20px; */
+    /* margin: 0px; */
 }
 
 #donate-btn:hover{
@@ -1409,28 +1410,36 @@ hr{
 /* HERO SECTION */
 
 .hero-section{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
-    padding-bottom: 20px;
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 0px;
+    /* padding-bottom: 20px;
     padding-left: 50px;
     padding-right: 60px;
-    padding-top: 50px;
+    padding-top: 50px; */
 }
 
 .intro{
-    max-width: 400px;
-    padding-left: 5px;
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 30px;
     display: grid;
     justify-content: center;
+    position: relative;
+    right: 220px;
 }
 
 .intro h3{
     font-family: "Bevan";
     color: #8E7ADA;
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 20px;
     line-height: 50px;
+    margin-left: 15px;
+    max-width: 700px;
+    text-align: center;
 }
 
 .intro span{
@@ -1439,28 +1448,35 @@ hr{
 
 .intro p{
     font-family: "Epilogue Light";
-    font-size: 12px;
-    color: #252424;
+    font-size: 15px;
+    color: #121212;
     line-height: 25px;
-    width: 400px;
+    width: 700px;
     padding-bottom: 5px;
+    margin-left: 35px;
+    text-align: center;
 }
 
 .btn{
-    display: flex;
-    gap: 50px;
+    /* display: flex; */
+    /* border: 2px solid blue; */
+    /* gap: 50px; */
+    gap: 10px;
+    max-width: 80%;
+    margin: 0px auto;
+    justify-content: center;
+    margin-left: 200px;
 }
+
 .btn button{
-    width: 100px;
+    width: 150px;
     text-align: center;
     background-color: #8E7ADA;
     color: #ffffff;
-    border: 1px solid #ffffff;
-    padding: 12px;
-    font-size: 12px;
+    padding: 15px;
+    font-size:11px;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
 .the-btn:hover{
@@ -1469,78 +1485,103 @@ hr{
     border: 2px solid #8E7ADA;
 }
 
+
 .hero-section img{
+    width: 900px;
     margin-top: 50px;
-    width: 500px;
-    /* height: 300px; */
-    border-radius: 20px;
+    height: 400px;    
+    position: relative;
+    right: 145px;
 }   
 
 /* ABOUT SECTION */
 
-.img-text-bg-two{
-    display: none;
-}
-
-.about{
+.about-two{
     display: grid;
     margin-top: 50px;
+    justify-content: center;
 }
 
-.about h3{
+.about-two h3{
     text-align: center;
     font-weight: 600;
     color: #8E7ADA;
-    font-family: "Epilogue Light";
-    font-size: 30px;
+    font-family: "Bevan";
+    font-size: 40px;
 }
+
 
 .img-text-bg{
+    display: none;
+}
+
+
+.img-text-bg-two{
     background-color: #d2caf03b;
+    display: block;
+    justify-content: flex-start;
     position: relative;
-    margin: -5px;
-    gap: 100px;
+    margin: 0px;
+    right: 200px;
+    padding: 0px;
+    /* left: 20px; */
+    /* border: 2px solid; */
+    /* margin: -5px; */
+    /* gap: 50px; */
 }
 
-.img-text{
-    display: flex;
+.img-text-two{
+    display: grid;
     justify-content: space-between;
-    padding: 20px 150px 100px 150px;
-    gap: 100px;
+    max-width: 350px;
+    /* margin-top: -20px; */
+    gap: 0px;
+    /* border: 2px solid blue; */
+    /* padding: 20px 150px 100px 150px; */
+    /* gap: 50px; */
 }
 
-.img-text p{
-    width: 500px;
+.img-text-two p{
+    position: relative;
+    width: 700px;
+    right: 180px;
+    margin: 30px 190px 0px 0px;
     font-family: "Epilogue Light";
-    font-size: 15px;
-    line-height: 25px;
-    border-left: 2px solid #da7ad565;
+    font-size: 20px;
+    line-height: 35px;
+    /* border-left: 2px solid #da7ad565;
     border-right: 2px solid #8E7ADA;
-    border-bottom: 2px solid #8f7bde7f;
+    border-bottom: 2px solid #8f7bde7f; */
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
     padding-bottom: 10px;
 }
 
-.p-h{
-    padding-left: 5px;
+.p-h-two{
+    /* padding-left: 5px; */
     margin-top: -10px;
+
 }
 
-.p-h h4{
-    font-family: "Bebas Neue Pro";
-    font-size: 25px;
-    font-weight: 700;
+.p-h-two h4{
+    font-family: "Bevan";
     color: #252424;
     text-align: center;
+    margin-right: 500px;
+    font-size: 35px;
 }
 
-.img-text img{
+.img-text-two img{
+    /* display: flex; */
+    position: relative;
     padding-top: 20px;
-    width:  400px;
+    right: 180px;
+    width:  720px;
     border: none;
+    border-radius: 10px;
 }
+
 
 /* NUMBERS */
 
@@ -1558,13 +1599,16 @@ hr{
     font-family: "Epilogue Light";
     color: #8E7ADA;
     margin-bottom: -20px;
+    margin-right: 400px;
 }
 
 .number{
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    justify-content: flex-start;
+    gap: 50px;
     align-items: center;
+    padding-left: 20px;
+
 }
 
 .number h4{
@@ -1595,12 +1639,13 @@ hr{
     color: #8E7ADA;
     margin-bottom: -50px;
     font-size: 40px;
+    margin-right: 370px;
 }
 
 .the-img{
     display: grid;
     position: relative;
-    margin-left: 60px;
+    margin-left: 80px;
     margin-top: -20px;
     z-index: 20px;
     gap: 5px;
@@ -1608,6 +1653,7 @@ hr{
 
 .top{
     display: flex;
+    flex-direction: column;
     object-fit: cover;
     gap: 7px;
     position: relative;
@@ -1616,6 +1662,7 @@ hr{
 .gradient{
     position: relative;
     top: 10px;
+    left: 50px;
 }
 
 .gradient > img{
@@ -1626,8 +1673,9 @@ hr{
 
 .gradient-two{
     position: relative;
+    top: 175px;
     bottom: 10px;
-    left: 180px;
+    left: 55px;
 }
 
 
@@ -1654,17 +1702,22 @@ hr{
 .gradient-two > img{
     position: absolute;
     top: 130px;
-    width: 590px;
-    height: 329px;
+    width: 599px;
+    height: 334px;
     border-radius: 15px;
 }
 
+.gradient-two .just-text{
+    top: 330px;
+}
 .bottom{
     display: flex;
+    flex-direction: column;
     object-fit: cover;
     gap: 5px;
     position: relative;
-    top: 173px;
+    top: 385px;
+    
 }
 
 .underlay-two{
@@ -1689,20 +1742,30 @@ hr{
     width: 599px;
     height: 298px;
     object-fit: cover;
+    left: 55px;
     filter: brightness(40%);
+}
+
+.other-gradient .just-text{
+    left: 100px;
+    bottom: 50px;
 }
 
 .another-gradient > img{
     border-radius: 15px;
-    top: 132px;
+    top: 290px;
     width: 594px;
     height: 298px;
     object-fit: cover;
-    left: 1.5px;
+
 }
 .another-gradient{
     position: relative;
-    left: 180px;
+    left: 60px;
+}
+
+.another-gradient .just-text{
+    top: 450px;
 }
 
 .just-text{
@@ -1729,8 +1792,13 @@ hr{
     text-align: center;
     font-family: "Bevan";
     color: #8E7ADA;
-    font-size: 30px;
-    margin-top: 600px;
+    font-size: 40px;
+    margin-top: 950px;
+    margin-right: 380px;
+}
+
+.first-testifier{
+    margin-left: 75px;
 }
 
 .testimonial{
@@ -1755,7 +1823,7 @@ hr{
 
 .testify h3{
     font-family: "Bevan";
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .testify p{
@@ -1778,14 +1846,15 @@ hr{
 
 .just-text-sec{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     margin: 50px 0px;
     padding-left: 40px;
     padding-right: 40px;
     height: 300px;
     align-items: center;
     background-color: #252424;
-    
+    margin-right: 400px;
 }
 
 .just-text-sec a{
@@ -1798,6 +1867,7 @@ hr{
     width: 200px;
     line-height: 40px;
     color: #ffffff;
+    text-align: center;
 }
 
 
@@ -1805,6 +1875,7 @@ hr{
     width: 500px;
     font-family: "Epilogue Light";
     line-height: 30px;
+    text-align: center;
 }
 
 
@@ -1813,12 +1884,12 @@ hr{
 /* LAST SECTION */
 .last-sec{
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
     font-family: "Epilogue Light";
     gap: 90px;
-    margin: 0px 55px 0px 40px;
+    margin: 0px 400px 0px 0px;
     color: #000000;
 }
 
@@ -1871,6 +1942,7 @@ footer{
 
 hr{
     color: #8E7ADA;
-    width: 100%;
+    width: 700px;
+    margin-right: 400px;
 }
 }
