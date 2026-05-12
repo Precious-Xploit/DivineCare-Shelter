@@ -808,5 +808,370 @@ hr{
 /* TABLET */
 
 @media (min-width: 481px) and (max-width: 1200px) {
+    body{
+    width: 1200px;
+    margin: 0px auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.ngo{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    justify-content: center; 
+}
+
+nav{
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 60;
+    padding: 0px 0px 0px 30px;
+    gap: 90px;
+    top: 15px;
+
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: "Epilogue Light";
+    color:  #8E7ADA;
+    margin: 0px;
+    /* margin-left: 25px; */
+}
+
+.logo > h3{
+    font-size: 12px;
+    max-width: 20px;
+}
+
+nav img{
+    max-width: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    font-family: "Epilogue Light";
+    list-style: none;
+    font-size: 13px;
+    font-weight: 700;
     
+}
+
+ul a{
+    text-decoration: none;
+    font-family: "Epilogue Light";
+    background-color: #ffffff;
+    color:  #8E7ADA;
+    padding: 0px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.home{
+    color:  #8E7ADA;
+    cursor: pointer;
+    margin-bottom: -9px;
+}
+
+.home-border{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2px;
+}
+
+.border{
+    background-color:  #8E7ADA;
+    width: 20px;
+    height: 2px;
+    margin-left: 8px;
+    margin-top: 10px;
+
+}
+
+nav a button{
+    font-family: "Epilogue Light";
+    background-color:  #8E7ADA;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    /* margin-right: 20px; */
+    /* margin: 0px; */
+}
+
+#donate-btn:hover{
+    background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+}
+
+hr{
+    width: 100%;
+    margin: 0px auto;
+    color: #a7a2a297;
+}
+
+
+/* PAYMENT SECTION */
+
+.payment-section{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    font-family: "Epilogue Light";
+    padding: 100px 0px;
+    background-color: rgba(237, 240, 240, 0.477);
+    margin-top: -10px;
+}
+
+.payment-type{
+    text-align: center;
+    margin-right: 400px;
+}
+
+.payment-type h3{
+    font-size: 25px;
+}
+
+.payment-type p{
+    font-size: 20px;
+}
+
+.name-img{
+    display: flex;
+    gap: 30px;
+}
+
+.name-img a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.btc{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #8d7ada5a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btc img{
+    width: 50px;
+    border-radius: 5px;
+}
+
+.btc:hover{
+    background-color: #e8e5f45a;
+    transform: scaleX(1.01);
+    transition: 0.2s;
+}
+
+.trc{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #8d7ada5a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.trc img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.trc:hover{
+    background-color: #e8e5f45a;
+    transform: scaleX(1.01);
+    transition: 0.2s;
+}
+
+.other{
+   display: flex;
+    /* align-items: center; */
+    font-size: 15px;
+    justify-content: center;
+    padding: 20px; 
+    background-color: #ffffff;
+    border: 3px solid #8d7ada5a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.other img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.other:hover{
+    background-color: #e8e5f45a;
+    transform: scaleX(1.01);
+    transition: 0.2s;
+}
+
+.other p{
+    text-align: center;
+}
+
+.crypto{
+    font-family: "Epilogue Light";
+    margin-right: 400px;
+}
+
+.crypto button{
+    border: 2px solid #8E7ADA;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #8E7ADA;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Epilogue Light";
+}
+
+.lock img{
+    width: 20px;
+    margin-bottom: 4px;
+}
+
+
+
+/* LAST PART */
+.last-part-two{
+    display: none;
+}
+
+.last-part{
+    /* background-color: #000000; */
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.just-text-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 300px;
+    align-items: center;
+    background-color: #252424;
+    margin-right: 400px;
+}
+
+.just-text-sec a{
+    text-decoration: none;
+}
+
+.just-text-sec h3{
+    font-family: "Epilogue Light";
+    font-size: 30px;
+    width: 200px;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.just-text-sec p{
+    width: 500px;
+    font-family: "Epilogue Light";
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+
+/* LAST SECTION */
+.last-sec{
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    font-family: "Epilogue Light";
+    gap: 90px;
+    margin: 0px 400px 0px 0px;
+    color: #000000;
+}
+
+.last-sec img{
+    width: 100px;
+}
+
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.text-logo h3{
+    color: #8E7ADA;
+    font-size: 15px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.last-sec-list{
+    font-size: 12px;
+
+}
+
+.last-sec-list li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.last-sec-list a{
+    color: #000000;
+    text-align: left;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* FOOTER */
+footer{
+    padding: 0px 60px;
+    font-family: "Epilogue Light";
+    font-size: 12px;
+    margin-top: 0px;
+    color: #000000;
+}
+
+hr{
+    color: #8E7ADA;
+    width: 700px;
+    margin-right: 400px;
+}
 }
