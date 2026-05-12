@@ -830,7 +830,7 @@ nav{
     position: fixed;
     background-color: #ffffff;
     z-index: 60;
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 40px;
     gap: 90px;
     top: 15px;
 
@@ -935,6 +935,7 @@ hr{
     padding: 100px 0px;
     background-color: rgba(237, 240, 240, 0.477);
     margin-top: -10px;
+    margin-left: 15px;
 }
 
 .payment-type{
@@ -1083,7 +1084,7 @@ hr{
     height: 300px;
     align-items: center;
     background-color: #252424;
-    margin-right: 400px;
+    /* margin-right: 400px; */
 }
 
 .just-text-sec a{
@@ -1097,6 +1098,7 @@ hr{
     line-height: 40px;
     color: #ffffff;
     text-align: center;
+    margin-right: 350px;
 }
 
 
@@ -1105,6 +1107,7 @@ hr{
     font-family: "Epilogue Light";
     line-height: 30px;
     text-align: center;
+    margin-right: 350px;
 }
 
 
