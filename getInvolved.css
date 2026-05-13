@@ -501,6 +501,11 @@ hr{
     gap: 240px;
 }
 
+.the-link{
+    display: flex;
+    justify-content: center;
+}
+
 .just-text-sec{
     display: flex;
     justify-content: space-between;
@@ -1343,6 +1348,11 @@ nav{
 nav img{
     max-width: 50px;
 }
+
+nav a{
+    text-decoration: none;
+}
+
 
 nav ul {
     display: flex;

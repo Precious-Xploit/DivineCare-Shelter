@@ -540,6 +540,11 @@ hr{
 
 }
 
+.the-link{
+    display: flex;
+    justify-content: center;
+}
+
 .just-text-sec a{
     text-decoration: none;
 }
@@ -1465,6 +1470,11 @@ nav ul {
     font-weight: 700;
 
 }
+
+nav a{
+    text-decoration: none;
+}
+
 
 ul a{
     text-decoration: none;

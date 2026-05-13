@@ -866,6 +866,8 @@ nav ul {
     
 }
 
+
+
 ul a{
     text-decoration: none;
     font-family: "Epilogue Light";
@@ -898,6 +900,10 @@ ul a{
 
 }
 
+nav a{
+    text-decoration: none;
+}
+
 nav a button{
     font-family: "Epilogue Light";
     background-color:  #8E7ADA;
@@ -908,6 +914,7 @@ nav a button{
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
+    text-decoration: none;
     /* margin-right: 20px; */
     /* margin: 0px; */
 }
