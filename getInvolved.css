@@ -170,18 +170,37 @@ hr{
     line-height: 40px;
 }
 
-.main-container button{
-    background-color: #8E7ADA;
-    border: none;
+.btn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.btn button{
     width: 100px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
-    color: #ffffff;
     cursor: pointer;
+    
 }
 
-button:hover{
+.dt-btn{
+    background-color: #8E7ADA;
+    color: #ffffff;
+    border: none;
+}
+
+.dt-btn:hover{
+    background-color: #7256df;
+}
+
+.vol-btn{
     background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+}
+
+.vol-btn:hover{
+    background-color: #eeeeee;
     color: #8E7ADA;
     border: 2px solid #8E7ADA;
 }
@@ -764,18 +783,54 @@ hr{
     line-height: 40px;
 }
 
-.main-container button{
-    background-color: #8E7ADA;
-    border: none;
+.btn{
+    display: flex;
+    gap: 20px;
+}
+
+/* .btn button{
     width: 100px;
-    padding: 10px;
-    border-radius: 5px;
+    text-align: center;
+    background-color: #8E7ADA;
     color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+
+} */
+
+.dt-btn{
+    width: 100px;
+    text-align: center;
+    background-color: #8E7ADA;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover{
+.dt-btn:hover{
+    background-color: #7256df;
+}
+
+.vol-btn{
+    width: 100px;
+    text-align: center;
     background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.vol-btn:hover{
+    background-color: #eeeeee;
     color: #8E7ADA;
     border: 2px solid #8E7ADA;
 }
@@ -1393,31 +1448,45 @@ hr{
     line-height: 45px;
 }
 
-.main-container button{
-    background-color: #ffffff;
-    border: none;
-    width: 120px;
-    padding: 12px;
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dt-btn{
+    width: 100px;
+    text-align: center;
+    background-color: #8E7ADA;
+    color: #ffffff;
+    padding: 14px;
+    font-size: 12px;
     border-radius: 5px;
-    color: #8E7ADA;
     cursor: pointer;
 }
 
-.de-btn{
+.dt-btn:hover{
     background-color: #7256df;
 }
 
-/* .vol-btn{
+.vol-btn{
+    width: 100px;
+    text-align: center;
     background-color: #ffffff;
     color: #8E7ADA;
-    border: 2px solid #8E7ADA;
-} */
-
-button:hover{
-    background-color: #8E7ADA;
-    color: #ffffff;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+
+.vol-btn:hover{
+    background-color: #eeeeee;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+}
 
 /* GET INVOLVED */
 

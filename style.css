@@ -180,9 +180,11 @@ hr{
 
 .btn{
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 20px;
 }
-.btn button{
+
+.dt-btn{
     width: 100px;
     text-align: center;
     background-color: #8E7ADA;
@@ -192,11 +194,27 @@ hr{
     font-size: 12px;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
-.the-btn:hover{
+.dt-btn:hover{
+    background-color: #7256df;
+}
+
+.the-btn{
+    width: 100px;
+    text-align: center;
     background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.the-btn:hover{
+    background-color: #eeeeee;
     color: #8E7ADA;
     border: 2px solid #8E7ADA;
 }
@@ -811,29 +829,43 @@ hr{
 }
 
 .btn{
-    /* display: flex; */
-    /* border: 2px solid blue; */
-    /* gap: 50px; */
-    gap: 10px;
-    max-width: 80%;
-    margin: 0px auto;
+    display: flex;
     justify-content: center;
-    margin-left: 40px;
+    align-items: center;
+    gap: 20px;
 }
 
-.btn button{
-    width: 150px;
+.dt-btn{
+    width: 100px;
     text-align: center;
     background-color: #8E7ADA;
     color: #ffffff;
-    padding: 15px;
-    font-size:11px;
+    border: 1px solid #ffffff;
+    padding: 12px;
+    font-size: 12px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.the-btn:hover{
+.dt-btn:hover{
+    background-color: #7256df;
+}
+
+.the-btn{
+    width: 100px;
+    text-align: center;
     background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.the-btn:hover{
+    background-color: #eeeeee;
     color: #8E7ADA;
     border: 2px solid #8E7ADA;
 }
@@ -1544,40 +1576,45 @@ hr{
 }
 
 .btn{
-    /* display: flex; */
-    /* border: 2px solid blue; */
-    /* gap: 50px; */
-    gap: 10px;
-    max-width: 80%;
-    margin: 0px auto;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-left: 250px;
+    gap: 20px;
 }
 
-.btn button{
-    width: 150px;
+.dt-btn{
+    width: 100px;
     text-align: center;
-    background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
-    padding: 15px;
-    font-size:11px;
+    background-color: #8E7ADA;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 14px;
+    font-size: 12px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#dt-btn{
-    background-color: #8E7ADA;
-    color: #ffffff;
-}
-
-#dt-btn:hover{
+.dt-btn:hover{
     background-color: #7256df;
 }
+
+.the-btn{
+    width: 100px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #8E7ADA;
+    border: 2px solid #8E7ADA;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .the-btn:hover{
     background-color: #eeeeee;
     color: #8E7ADA;
+    border: 2px solid #8E7ADA;
 }
 
 
