@@ -390,6 +390,9 @@ hr{
     border-radius: 15px;
 }
 
+.gradient-two .just-text{
+    top: 310px;
+}
 .bottom{
     display: flex;
     object-fit: cover;
@@ -631,7 +634,7 @@ hr{
         align-items: center;
         background-color: #ffffff;
         justify-content: space-between;
-        width: calc(100% - 20px);
+        width: calc(100%);
         max-width: 460px;
         box-sizing: border-box;
         margin: 0px auto;
@@ -1370,7 +1373,7 @@ hr{
 /* RESPONSIVE DESIGN */
 /* TABLET */
 
-@media (min-width: 418px) and (max-width: 1200px){
+@media (min-width: 481px) and (max-width: 1200px){
 body{
     width: 1200px;
     margin: 0px auto;
