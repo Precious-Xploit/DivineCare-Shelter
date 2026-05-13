@@ -39,7 +39,7 @@ body{
     /* width: 1280px;
     margin: 0px auto; */
     display: grid;
-    justify-content: center; 
+    justify-content: center;
 }
 
 nav{
@@ -82,7 +82,7 @@ nav ul {
     list-style: none;
     font-size: 13px;
     font-weight: 700;
-    
+
 }
 
 ul a{
@@ -223,7 +223,7 @@ hr{
     margin-top: 50px;
     height: 350px;
     border-radius: 20px;
-}   
+}
 
 /* ABOUT SECTION */
 
@@ -537,7 +537,7 @@ hr{
     height: 300px;
     align-items: center;
     background-color: #252424;
-    
+
 }
 
 .just-text-sec a{
@@ -564,7 +564,7 @@ hr{
 
 /* LAST SECTION */
 .last-sec{
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
@@ -632,7 +632,7 @@ hr{
 
 /* RESPONSIVE DESIGN */
 /* MOBILE */
-@media(min-width: 319px) and (max-width: 480px){
+@media (width <= 480px) {
 
     nav{
         display: none;
@@ -641,7 +641,7 @@ hr{
     body{
         width: 100%;
         overflow-x: hidden;
-    } 
+    }
 
     .nav-two{
         display: flex;
@@ -873,9 +873,9 @@ hr{
 .hero-section img{
     max-width: 100%;
     margin-top: 50px;
-    height: 230px;    
+    height: 230px;
     margin-left: 35px;
-}   
+}
 
 /* ABOUT SECTION */
 
@@ -1249,12 +1249,12 @@ hr{
     height: 300px;
     align-items: center;
     background-color: #252424;
-    
+
 }
 
 .just-text-sec-two a{
     text-decoration: none;
-    
+
 }
 
 .explore h3{
@@ -1327,7 +1327,7 @@ hr{
 }
 
 .last-sec-two{
-    display: grid; 
+    display: grid;
     justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
@@ -1405,7 +1405,7 @@ hr{
 /* RESPONSIVE DESIGN */
 /* TABLET */
 
-@media (min-width: 481px) and (max-width: 1200px){
+@media (480px < width <= 1024px) {
 body{
     width: 1200px;
     margin: 0px auto;
@@ -1422,7 +1422,7 @@ body{
 
 .ngo{
     max-width: 1200px;
-    justify-content: center; 
+    justify-content: center;
 }
 
 nav{
@@ -1463,7 +1463,7 @@ nav ul {
     list-style: none;
     font-size: 13px;
     font-weight: 700;
-    
+
 }
 
 ul a{
@@ -1621,10 +1621,10 @@ hr{
 .hero-section img{
     width: 900px;
     margin-top: 50px;
-    height: 400px;    
+    height: 400px;
     position: relative;
     right: 145px;
-}   
+}
 
 
 
@@ -1852,7 +1852,7 @@ hr{
     gap: 5px;
     position: relative;
     top: 385px;
-    
+
 }
 
 .underlay-two{
@@ -2022,7 +2022,7 @@ hr{
 
 /* LAST SECTION */
 .last-sec{
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;

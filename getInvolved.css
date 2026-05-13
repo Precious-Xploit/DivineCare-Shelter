@@ -28,7 +28,7 @@ body{
     /* width: 1280px;
     margin: 0px auto; */
     display: grid;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .nav-two{
@@ -75,7 +75,7 @@ nav ul {
     list-style: none;
     font-size: 13px;
     font-weight: 700;
-    
+
 }
 
 ul a{
@@ -180,7 +180,7 @@ hr{
     padding: 12px;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
 
 .dt-btn{
@@ -314,14 +314,14 @@ hr{
     font-family: "Bevan";
     /* letter-spacing: 5px; */
     text-align: center;
-    
+
 }
 
 .partner-and-img >h3{
     font-family: "Epilogue Light";
     color: #8E7ADA;
     letter-spacing: 4px;
-    
+
 }
 
 .involved-img{
@@ -536,7 +536,7 @@ hr{
 
 /* LAST SECTION */
 .last-sec{
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
@@ -600,7 +600,7 @@ hr{
 /* MOBILE */
 
 
-@media(min-width: 319px) and (max-width: 480px){
+@media (width <= 480px) {
 
     nav{
         display: none;
@@ -609,7 +609,7 @@ hr{
     body{
         max-width: 481px;
         overflow-x: hidden;
-    } 
+    }
 
     .nav-two{
         display: flex;
@@ -945,14 +945,14 @@ hr{
     font-family: "Bevan";
     /* letter-spacing: 5px; */
     text-align: center;
-    
+
 }
 
 .partner-and-img >h3{
     font-family: "Epilogue Light";
     color: #8E7ADA;
     letter-spacing: 4px;
-    
+
 }
 
 .involved-img{
@@ -1026,12 +1026,12 @@ hr{
     height: 300px;
     align-items: center;
     background-color: #252424;
-    
+
 }
 
 .just-text-sec-two a{
     text-decoration: none;
-    
+
 }
 
 .explore h3{
@@ -1221,7 +1221,7 @@ hr{
 }
 
 .last-sec-two{
-    display: grid; 
+    display: grid;
     justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
@@ -1297,7 +1297,7 @@ hr{
 
 /* RESPONSIVE DESIGN */
 /* TABLET VIEW */
-@media (min-width: 481px) and (max-width: 1200px){
+@media (480px < width <= 1024px) {
 body{
     width: 1200px;
     margin: 0px auto;
@@ -1309,7 +1309,7 @@ body{
     max-width: 1200px;
     margin: 0px auto;
     display: grid;
-    justify-content: center; 
+    justify-content: center;
 }
 
 nav{
@@ -1352,7 +1352,7 @@ nav ul {
     list-style: none;
     font-size: 13px;
     font-weight: 700;
-    
+
 }
 
 ul a{
@@ -1599,14 +1599,14 @@ hr{
     font-family: "Bevan";
     /* letter-spacing: 5px; */
     text-align: center;
-    
+
 }
 
 .partner-and-img >h3{
     font-family: "Epilogue Light";
     color: #8E7ADA;
     letter-spacing: 4px;
-    
+
 }
 
 .involved-img{
@@ -1693,7 +1693,7 @@ hr{
 .team-sec{
     padding-top: 150px;
     max-width: 900px;
-    
+
 }
 
 .team-sec h3{
@@ -1828,7 +1828,7 @@ hr{
 
 /* LAST SECTION */
 .last-sec{
-    display: flex; 
+    display: flex;
     justify-content: flex-start;
     margin-top: 20px;
     padding: 0px 0px 0px 10px;
@@ -1859,7 +1859,7 @@ hr{
 
 .last-sec-list{
     font-size: 12px;
-    
+
 }
 
 .last-sec-list li{
