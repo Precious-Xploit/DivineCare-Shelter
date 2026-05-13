@@ -580,7 +580,7 @@ hr{
 /* MOBILE */
 
 
-@media(min-width: 319px) and (max-width: 480px){
+@media (width <= 480px) {
 
     nav{
         display: none;
@@ -1241,7 +1241,7 @@ hr{
 
 /* RESPONSIVE DESIGN */
 /* TABLET VIEW */
-@media (min-width: 418px) and (max-width: 1200px){
+@media (480px < width <= 1024px) {
 body{
     width: 1200px;
     margin: 0px auto;

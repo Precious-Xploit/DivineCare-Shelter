@@ -125,7 +125,7 @@ hr{
     color: #a7a2a297;
 }
 
-@media(min-width: 319px) and (max-width: 480px){
+@media (width <= 480px) {
     nav{
         display: none;
     }
@@ -263,5 +263,4 @@ hr{
         outline-offset: 2px;
     }
 }
-
 
