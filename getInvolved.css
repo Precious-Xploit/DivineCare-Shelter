@@ -61,6 +61,7 @@ nav{
 .logo > h3{
     font-size: 12px;
     width: 20px;
+    margin-top: 20px;
 }
 
 nav img{
@@ -105,6 +106,10 @@ ul a{
     width: 20px;
     height: 2px;
     margin-left: 40px;
+}
+
+nav a{
+    text-decoration: none;
 }
 
 nav a button{
@@ -565,7 +570,8 @@ hr{
     color: #8E7ADA;
     font-size: 15px;
     width: 25px;
-    /* padding-left: 10px; */
+    margin-left: 20px;
+    text-align: center;
 }
 
 .last-sec-list{
@@ -594,6 +600,10 @@ footer{
     font-size: 12px;
     margin-top: 0px;
     color: #000000;
+}
+
+footer p{
+    padding-left: 45px;
 }
 
 hr{
@@ -643,6 +653,12 @@ hr{
         gap: 10px;
     }
 
+    .logo-two a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
     .logo-two img{
         width: 50px;
     }
@@ -650,6 +666,7 @@ hr{
     .logo-two h3{
         font-size: 12px;
         width: 20px;
+        padding-top: 10px;
     }
 
     .menu{
@@ -793,19 +810,6 @@ hr{
     display: flex;
     gap: 20px;
 }
-
-/* .btn button{
-    width: 100px;
-    text-align: center;
-    background-color: #8E7ADA;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    padding: 12px;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-
-} */
 
 .dt-btn{
     width: 100px;
@@ -1018,7 +1022,7 @@ hr{
     /* background-color: #000000; */
     color: #ffffff;
     margin-top: 0px;
-    margin-right: 60px;
+    
 }
 
 .just-text-sec-two{
@@ -1031,7 +1035,6 @@ hr{
     height: 300px;
     align-items: center;
     background-color: #252424;
-
 }
 
 .just-text-sec-two a{
@@ -1251,7 +1254,7 @@ hr{
 
 .text-logo-two h3{
     color: #8E7ADA;
-    font-size: 15px;
+    font-size: 20px;
     width: 25px;
     padding-left: 10px;
 }
