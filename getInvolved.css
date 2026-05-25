@@ -1198,11 +1198,6 @@ hr{
     color: #000000;
 }
 
-.team-photos{
-    /* display: flex;
-    flex-direction: column;
-    margin: 0px auto; */
-}
 
 .top-team{
     display: flex;
@@ -1228,10 +1223,6 @@ hr{
     height: 400px;
     font-family: "Epilogue Light";
     justify-content: center;
-}
-
-.team-size img{
-    /* padding-left: 95px; */
 }
 
 .team-size h3{
