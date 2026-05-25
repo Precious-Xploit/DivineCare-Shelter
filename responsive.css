@@ -61,7 +61,7 @@ button:active {
 hr {
     width: min(100% - (var(--page-pad) * 2), var(--content-max)) !important;
     max-width: var(--content-max) !important;
-    margin: 0 auto !important;
+    margin: 20px auto 10px auto !important;
     border: 0;
     border-top: 1px solid rgba(142, 122, 218, 0.22);
 }
@@ -83,12 +83,13 @@ nav {
     max-width: var(--page-max) !important;
     min-height: 76px;
     margin: 0 !important;
-    padding: 0.75rem var(--page-pad) !important;
+    padding-left: var(--page-pad) !important;
+    padding-right: var(--page-pad) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
     gap: clamp(1rem, 3vw, 3rem) !important;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 1px 0 rgba(142, 122, 218, 0.16);
     z-index: 60;
 }
@@ -168,7 +169,7 @@ nav a button {
     text-align: left;
 }
 
-.intro h3,
+/* .intro h3, */
 .main-container h3 {
     font-size: clamp(2rem, 6vw, 3.6rem) !important;
     line-height: 1.08 !important;
@@ -181,24 +182,25 @@ nav a button {
     text-align: inherit;
 }
 
-.intro p,
-.main-container p {
+/* .main-container p */
+.intro p{
     width: auto !important;
     max-width: 62ch;
-    color: var(--muted);
+    color: #d4d3d8;
     font-size: clamp(0.95rem, 1.5vw, 1.05rem) !important;
     line-height: 1.75 !important;
     margin: 0 0 1.25rem !important;
+    font-family: "DM Sans" !important;
 }
 
-.intro .btn,
+.intro,
 .btn {
     width: 100% !important;
     max-width: none !important;
     margin: 0 !important;
     display: flex !important;
     flex-wrap: wrap;
-    gap: 0.75rem !important;
+    /* gap: 0.75rem !important; */
     justify-content: flex-start !important;
 }
 
@@ -210,7 +212,7 @@ nav a button {
 .mobile-donate-btn {
     min-width: 112px;
     padding: 0.75rem 1rem !important;
-    border-radius: 0.5rem !important;
+    /* border-radius: 0.5rem !important; */
 }
 
 .hero-section > img {
@@ -239,10 +241,15 @@ nav a button {
     background-position: center;
 }
 
+.stroke{
+    position: relative !important;
+    margin: 40px auto 0px auto;
+}
+
 .main-container {
-    position: static !important;
+    position: relative !important;
     width: min(100%, 720px) !important;
-    margin: 0 auto !important;
+    margin: 10px auto 0px auto !important;
     padding: 0 !important;
     text-align: center;
 }
@@ -251,11 +258,12 @@ nav a button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.75rem;
+    /* gap: 0.75rem; */
 }
 
-.hero-section:has(.main-container) .btn {
+.hero-section:has(.main-container) .only-btn {
     justify-content: center !important;
+    gap: 1px;
 }
 
 .img-text-bg {
@@ -277,13 +285,13 @@ nav a button {
     gap: clamp(2rem, 5vw, 4rem);
 }
 
+/* .team-sec h3, */
+/* .payment-type h3  */
 .about h3,
 .impact > h3,
 .what-we-do h3,
 .testimony h3,
-.gallary h2,
-.team-sec h3,
-.payment-type h3 {
+.gallary h2{
     font-size: clamp(2rem, 5vw, 3rem) !important;
     line-height: 1.15;
     margin: 0 0 clamp(1.5rem, 4vw, 2.5rem) !important;
@@ -368,7 +376,7 @@ nav a button {
     position: static !important;
     width: min(100%, var(--content-max));
     margin: 0 auto !important;
-    padding: 0 var(--page-pad) var(--section-gap) !important;
+    /* padding: 0 var(--page-pad) var(--section-gap) !important; */
     display: grid !important;
     gap: 1rem !important;
 }
@@ -472,10 +480,10 @@ nav a button {
     margin: 0 auto !important;
 }
 
-.payment-type p {
+/* .payment-type p {
     font-size: clamp(1rem, 2vw, 1.2rem) !important;
     line-height: 1.6;
-}
+} */
 
 .crypto {
     width: min(100%, 680px) !important;
@@ -488,7 +496,7 @@ nav a button {
     width: 100%;
     gap: 1rem;
     padding: clamp(1rem, 3vw, 1.25rem) !important;
-    border-color: var(--border) !important;
+    border: 2px solid #9f749f !important;
 }
 
 .btc,
@@ -503,6 +511,7 @@ nav a button {
 
 .name-img p {
     overflow-wrap: anywhere;
+    font-family: "DM Sans" !important;
 }
 
 .lock {
@@ -554,12 +563,15 @@ nav a button {
     line-height: 1.75 !important;
 }
 
-.donate-text .cta,
-.volunteer-text .cta-btn,
+.donate-text .cta-btn,
 .partner-text .cta-btn {
-    margin-top: auto !important;
+    margin-top: 27px !important;
 }
 
+/* .volunteer-text .cta-btn,
+.partner-text .cta-btn {
+    margin-top: 20px !important;
+} */
 .gallary {
     padding: 0 var(--page-pad) !important;
 }
@@ -600,16 +612,16 @@ nav a button {
     margin: 0 !important;
 }
 
-.top-team,
-.bottom-team {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.top-team{
+    display: flex !important;
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
     gap: 1rem !important;
     margin: 0 !important;
+    margin-top: 50px !important;
 }
 
 .team-size {
-    width: auto !important;
+    width: 262px !important;
     height: auto !important;
     min-width: 0;
     border-radius: 0.75rem;
@@ -643,8 +655,8 @@ nav a button {
     width: 100% !important;
     min-height: 260px;
     height: auto !important;
-    margin: var(--section-gap) 0 2rem !important;
-    padding: clamp(2rem, 6vw, 4rem) var(--page-pad) !important;
+    /* margin: var(--section-gap) 0 2rem !important;
+    padding: clamp(2rem, 6vw, 4rem) var(--page-pad) !important; */
     display: grid !important;
     grid-template-columns: minmax(0, 0.65fr) minmax(0, 1fr);
     align-items: center;
@@ -677,7 +689,7 @@ nav a button {
 .last-sec-two,
 .footer-text {
     width: min(100%, var(--content-max)) !important;
-    margin: 0 auto !important;
+    margin: 20 auto !important;
     padding: 0 var(--page-pad) !important;
     display: grid !important;
     grid-template-columns: 1.2fr repeat(3, minmax(0, 1fr));
@@ -716,7 +728,7 @@ nav a button {
 
 footer {
     width: min(100%, var(--content-max));
-    margin: 2rem auto 0 !important;
+    margin: 4rem auto 0 !important;
     padding: 0 var(--page-pad) 1.25rem !important;
 }
 
@@ -771,7 +783,7 @@ footer p {
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: min(calc(100% - 1.5rem), 720px) !important;
+        width: min(calc(100%), 720px) !important;
         min-height: 64px;
         max-width: none !important;
         margin: 0 !important;
@@ -781,7 +793,7 @@ footer p {
         justify-content: space-between;
         gap: 0.75rem !important;
         background-color: rgba(255, 255, 255, 0.97);
-        box-shadow: 0 1px 0 rgba(142, 122, 218, 0.16);
+        box-shadow: 0 1px 0 rgba(207, 122, 218, 0.16);
         z-index: 60;
     }
 
@@ -827,9 +839,9 @@ footer p {
         gap: 0.25rem;
         padding: 0.5rem;
         background: #FFFFFF;
-        border: 1px solid rgba(142, 122, 218, 0.18);
+        border: 1px solid rgba(213, 122, 218, 0.18);
         border-radius: 0.5rem;
-        box-shadow: 0 16px 30px rgba(32, 24, 61, 0.14);
+        box-shadow: 0 16px 30px rgba(59, 24, 61, 0.14);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -849,7 +861,7 @@ footer p {
         align-items: center;
         min-height: 44px;
         padding: 0 0.75rem !important;
-        color: var(--accent);
+        color: #800080;
         text-decoration: none;
         font-size: 0.85rem;
         font-weight: 700;
@@ -858,7 +870,7 @@ footer p {
 
     .mobile-nav-links a:hover,
     .mobile-nav-links a.active {
-        background-color: rgba(142, 122, 218, 0.1);
+        background-color: rgba(210, 122, 218, 0.1);
     }
 
     .hero-section {
@@ -876,6 +888,7 @@ footer p {
     }
 
     .intro .btn,
+    .hero-btn,
     .btn,
     .main-container > div {
         justify-content: center !important;
@@ -895,7 +908,7 @@ footer p {
         width: 100% !important;
         margin: 0 !important;
         padding: var(--section-gap) var(--page-pad) !important;
-        background-color: rgba(210, 202, 240, 0.23);
+        background-color: rgba(234, 202, 240, 0.23);
     }
 
     .about-two,
@@ -998,7 +1011,7 @@ footer p {
         color: #ffffff !important;
         opacity: 1 !important;
         visibility: visible !important;
-        z-index: 2;
+        z-index: 31;
     }
 
     .the-img .just-text h3,
@@ -1068,8 +1081,8 @@ footer p {
         --page-pad: clamp(1rem, 5vw, 1.5rem);
     }
 
-    .intro h3,
-    .main-container h3 {
+    /* .main-container h3 */
+    .intro h3{
         font-size: clamp(1.9rem, 8.5vw, 2.35rem) !important;
         max-width: 100%;
     }

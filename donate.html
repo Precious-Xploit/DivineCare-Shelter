@@ -15,21 +15,29 @@
         <nav>
             <div class="logo">
                 <img src="Assets/images/ngo_Logo.png" alt="LOGO">
-                <h3>DIVINECARE SHELTER</h3>
+                <h3>DIVINECARE <span>SHELTER</span></h3>
+                <ul>
+                    <a href="index.html"><li class="home">Home</li></a>
+                    <div class="home-border">
+                        <a href="getInvolved.html"><li class="get-btn">Get Involved</li></a>
+                    </div>
+                    <a href="contactUs.html"><li class="cont-btn"> Contact Us</li></a>
+                </ul>
             </div>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="getInvolved.html"><li>Get Involved</li></a>
-                <a href="#contactUs"><li>Contact us</li></a>
-            </ul>
-            <a href="donate.html"><button id="donate-btn">Donate</button></a>
+            
+            <div class="just-btn">
+                <a href="mailto:support@divinecareshelter.com"><button id="vol-btn">Volunteer</button></a>
+                <a href="donate.html"><button id="donate-btn">Donate</button></a>
+            </div>
+            
         </nav>
-        <hr>
+
+
         <section class="nav-two">
             <div class="logo-two">
-                <a href="donate.html">
+                <a href="index.html">
                     <img src="Assets/images/ngo_Logo.png" alt="LOGO">
-                    <h3>DIVINECARE <br>SHELTER</h3>
+                    <h3>DIVINECARE <br> SHELTER</h3>
                 </a>
                 
             </div>
@@ -37,31 +45,47 @@
             <div class="menu">
                 <a href="donate.html"><button class="mobile-donate-btn">Donate</button></a>
                 <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-links">
-                    <img src="Assets/images/menu.svg" alt="" aria-hidden="true">
+                    <img src="Assets/images/menu-icons.png" alt="" aria-hidden="true">
                 </button>
             </div>
 
             <div class="mobile-nav-links" id="mobile-nav-links" aria-hidden="true">
                 <a href="index.html">Home</a>
                 <a href="getInvolved.html">Get Involved</a>
-                <a href="#contactUs">Contact us</a>
-                <a href="donate.html" class="active">Donate</a>
+                <a href="contactUs.html">Contact us</a>
+                <a href="donate.html"  class="active">Donate</a>
+                <a href="mailto:support@divinecareshelter.com">Volunteer</a>
             </div>
+        </section>
+
+        <section class="donate-section">
+            <img src="Assets/images/donate-bg.jpg" alt="">
+            <div class="donate-hero-container">
+                <div class="donate-orange"></div>
+                <h3>Make a Donation</h3>
+                <p>Your generosity transforms lives and creates sustainable futures for widows and orphans across Africa</p>
+                <div class="only-btn">
+                    <a href="donate.html"><button class="dt-btn">Donate</button></a>
+                    <a href="getInvolved.html"><button class="volun-btn">Volunteer</button></a>
+                </div>
+            </div>
+
         </section>
 
         <section class="payment-section">
             <div class="payment-type">
-                <h3>Choose Donation Method</h3>
-                <p>Select your preferred payment method to complete donation.</p>
+                <p>Donate Today</p>
+                <h3>Choose Your <span>Preferred Donation</span> Method</h3>
+                
             </div>
-
+            <p>Select your preferred payment method to complete donation.</p>
             <div class="crypto">
                 <div class="btc">
                     <div class="name-img">
                         <img src="Assets/images/btc.jpg" alt="">
                         <p id="btc-address">Bitcoin</p>
                     </div>
-                    <button id="btn" data-address="bc1qgynu5qaxgh3nxgrmfcaw9790jsekvtaae44twc">copy address</button>
+                    <button id="btn" data-address="bc1qgynu5qaxgh3nxgrmfcaw9790jsekvtaae44twc">Copy Address</button>
                 </div>
 
                 <div class="trc">
@@ -69,7 +93,7 @@
                         <img src="Assets/images/trc.jpg" alt="">
                         <p id="trc-address">USDT TRC20</p>
                     </div>
-                    <button id="btn-two" data-address="TP6qtdVJYUdRTkSvxGg1PxxvHYau9g7iRX">copy address</button>
+                    <button id="btn-two" data-address="TP6qtdVJYUdRTkSvxGg1PxxvHYau9g7iRX">Copy Address</button>
                 </div>
 
                 <div class="other">
@@ -80,7 +104,7 @@
                 </div>
 
                 <div class="lock">
-                    <img src="Assets/images/lock.svg" alt="">
+                    <img src="Assets/images/lock-two.png" alt="">
                     <p>Your payment information is secured and encrypted.</p>
                 </div>
                 

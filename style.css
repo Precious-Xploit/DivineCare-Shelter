@@ -24,6 +24,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "IntegralCF";
+    src: url('Assets/fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url('/Assests/fonts/Satoshi-Variable/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url('Assets/fonts/DM-Sans-Font/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
 .nav-two{
     display: none;
 }
@@ -60,60 +84,60 @@ nav{
 .logo{
     display: flex;
     align-items: center;
-    font-family: "Epilogue Light";
-    color:  #8E7ADA;
+    font-family: "DM Sans";
+    color:  #800080;
+    gap: 50px;
     /* margin-left: 25px; */
 }
 
 .logo > h3{
-    font-size: 12px;
-    width: 20px;
+    font-size: 13px;
+    width: 50px;
     margin-top: 20px;
+    
 }
 
+.logo span{
+    color: #000000;
+
+}
 nav img{
-    width: 50px;
+    width: 20px;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    gap: 100px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     list-style: none;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 700;
-
+    position: relative;
+    left: 40px;
 }
 
 ul a{
     text-decoration: none;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     background-color: #ffffff;
-    color:  #8E7ADA;
+    color:  #000000;
     padding: 10px;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
     text-align: center;
+    align-items: center;
+}
+
+.vol-btn{
+    position: relative;
+    right: 35px;
 }
 
 .home{
-    color:  #8E7ADA;
+    color:  #800080;
     cursor: pointer;
-    margin-bottom: -9px;
-}
-
-.home-border{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.border{
-    background-color:  #8E7ADA;
-    width: 20px;
-    height: 2px;
-    margin-left: 17px;
+    position: relative;
+    left: 35px;
 }
 
 nav a{
@@ -121,28 +145,34 @@ nav a{
 }
 
 nav a button{
-    font-family: "Epilogue Light";
-    background-color:  #8E7ADA;
+    font-family: "DM Sans";
+    background-color: #800080;
     color: #ffffff;
     border: 1px solid #ffffff;
     width: 100px;
-    border-radius: 5px;
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
     /* margin-right: 20px; */
 }
 
-#donate-btn:hover{
-    background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+#contact-btn{
+    position: relative;
+    background-color:  #f98f0d;
+    left: 22px;
 }
 
-hr{
-    width: 100%;
-    margin: 0px auto;
-    color: #a7a2a297;
+#contact-btn:hover{
+    border: 2px solid #f98f0d;
+    background-color: #ffffff;
+    color: #f98f0d;
+}
+ 
+
+#donate-btn:hover{
+    background-color: #ffffff;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
 /* HERO SECTION */
@@ -155,6 +185,10 @@ hr{
     padding-left: 50px;
     padding-right: 60px;
     padding-top: 50px;
+    background-color: #290129;
+    /* background-color: #F8F6FF; */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 35px;
 }
 
 .intro{
@@ -163,201 +197,152 @@ hr{
 }
 
 .intro h3{
-    font-family: "Bevan";
-    color: #8E7ADA;
-    font-size: 45px;
+    font-family: "IntegralCF", sans-serif;
+    color: #ffffff;
+    font-size: 40px;
     margin-bottom: 20px;
     line-height: 50px;
+    text-transform: capitalize;
 }
 
 .intro span{
-    color: #000000;
+    color: #f98f0d;
 }
 
 .intro p{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 12px;
-    color: #252424;
+    color: #dbd9de;
     line-height: 25px;
     width: 400px;
     padding-bottom: 5px;
 }
 
-.btn{
+.hero-btn{
     display: flex;
     align-items: center;
-    gap: 20px;
+    font-family: "DM Sans";
 }
 
 .dt-btn{
     width: 100px;
     text-align: center;
-    background-color: #8E7ADA;
+    background-color: #800080;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
     padding: 14px;
     font-size: 12px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 0px;
+    border: none;
 }
 
 .dt-btn:hover{
-    background-color: #7256df;
+    color: #800080;
+    border: 2px solid #800080;
+    background-color: #ffffff;
 }
 
 .the-btn{
     width: 100px;
     text-align: center;
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #f98f0d;
+    border: none;
+    /* border: 2px solid #f98f0d; */
     padding: 12px;
     font-size: 12px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 0px;
 }
 
 
 .the-btn:hover{
-    background-color: #eeeeee;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #eeeeee;
+    background-color: #f98f0d;
+    border: 2px solid #ffffff;
 }
 
 .hero-section img{
     margin-top: 50px;
     height: 350px;
     border-radius: 20px;
+    border: 7px solid #f98f0d;
 }
-
-/* ABOUT SECTION */
-
-.img-text-bg-two{
-    display: none;
-}
-
-.about{
-    display: grid;
-    margin-top: 50px;
-}
-
-.about h3{
-    text-align: center;
-    font-weight: 600;
-    color: #8E7ADA;
-    font-family: "Epilogue Light";
-    font-size: 30px;
-}
-
-.img-text-bg{
-    background-color: #d2caf03b;
-    position: relative;
-    margin: -5px;
-    gap: 100px;
-}
-
-.img-text{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 150px 100px 150px;
-    gap: 100px;
-}
-
-.img-text p{
-    width: 500px;
-    font-family: "Epilogue Light";
-    font-size: 15px;
-    line-height: 25px;
-    border-left: 2px solid #da7ad565;
-    border-right: 2px solid #8E7ADA;
-    border-bottom: 2px solid #8f7bde7f;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    padding-bottom: 10px;
-}
-
-.p-h{
-    padding-left: 5px;
-    margin-top: -10px;
-}
-
-.p-h h4{
-    font-family: "Bebas Neue Pro";
-    font-size: 25px;
-    font-weight: 700;
-    color: #252424;
-    text-align: center;
-}
-
-.img-text img{
-    padding-top: 20px;
-    width:  400px;
-    border: none;
-}
-
-/* NUMBERS */
-
-.impact-two{
-    display: none;
-}
-
-.impact{
-    padding:100px 0px;
-}
-
-.impact > h3{
-    text-align: center;
-    font-size: 40px;
-    font-family: "Epilogue Light";
-    color: #8E7ADA;
-    margin-bottom: -20px;
-}
-
-.number{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
-}
-
-.number h4{
-    font-family: "Bebas Neue Pro";
-    font-size: 45px;
-    font-weight: 900;
-    text-align: center;
-    color: #8E7ADA;
-    width: 150px;
-    padding: 20px 0px;
-}
-
-.number p{
-    font-family: "Epilogue Light";
-    font-size: 13px;
-     text-align: center;
-     margin-top: -30px;
-     text-transform: uppercase;
-     font-weight: 700;
-}
-
 
 /* WHAT WE DO */
 
 .what-we-do{
-    text-align: center;
-    font-family: "Epilogue Light";
-    color: #8E7ADA;
-    margin-bottom: -50px;
-    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-we-do p{
+    color: #800080;
+    background-color: #f2acf2;
+    padding: 10px;
+    border-radius: 25px;
+    width: 115px;
+    margin-top: 100px;
+    font-family: "DM Sans";
+}
+
+.service-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.providing{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.providing span{
+    color: #f98f0d;
+}
+.providing h3{
+    font-weight: 700;
+    font-family: "DM Sans";
+    font-size: 30px;
+    width: 400px;
+    margin-top: -2px;
+}
+
+.providing p{
+    font-family: "DM Sans";
+    width: 600px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: -15px;
 }
 
 .the-img{
     display: grid;
     position: relative;
-    margin-left: 60px;
-    margin-top: -20px;
+    margin-left: 0px;
+    margin-top: 20px;
     z-index: 20px;
     gap: 5px;
+}
+
+.the-img > p{
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 15px;
+    color: #800080;
+    background-color: #f2acf2;
+    width: 120px;
+    margin-right: 250px;
+    padding: 13px;
+    margin: 30px auto 20px auto;
+    border-radius: 25px;
 }
 
 .top{
@@ -468,7 +453,7 @@ hr{
     color: #ffffff;
     width: 420px;
     left: 50px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     z-index: 45;
 }
 
@@ -481,13 +466,210 @@ hr{
     line-height: 20px;
 }
 
-/* TESTIMONIES */
-.testimony{
+/* ABOUT SECTION */
+
+.img-text-bg-two{
+    display: none;
+}
+
+.about{
+    display: grid;
+    margin-top: 20px;
+}
+
+.about > p{
+    background-color: #f2acf2;
+    color: #1e001e;
+    font-family: "DM Sans";
+    padding: 10px;
+    border-radius: 25px;
     text-align: center;
-    font-family: "Bevan";
-    color: #8E7ADA;
+    display: inline-block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
+}
+
+.about span{
+    color: #9d279d;
+}
+
+.about h3{
+    text-align: center;
+    font-weight: 600;
+    font-family: "DM Sans";
+    font-size: 15px;
+    max-width: 900px;
+    position: relative;
+    left: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: -5%;
+}
+
+
+
+.img-text-bg{
+    background-color: #d3cfe03b;
+    position: relative;
+    margin: 0px;
+    gap: 0px;
+    border-radius: 45px;
+}
+
+.img-text{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 100px 0px;
+    gap: 0px;
+}
+
+.img-text p{
+    
+    font-family: "DM Sans";
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    width: 600px;
+}
+
+
+.p-h{
+    
+    margin-top: -10px;
+    width: 550px;
+}
+
+.p-h h4{
+    font-family: "DM Sans";
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+}
+
+.first .p-h{
+    width: 600px;
+    position: relative;
+    right: 80px;
+}
+
+.first img{
+    position: relative;
+    right: 28px;
+}
+
+.second .p-h{
+    width: 600px;
+}
+
+.second img{
+    position: relative;
+    left: 28px;
+}
+
+.img-text img{
+    padding-top: 20px;
+    width:  400px;
+    border: none;
+}
+
+
+
+/* NUMBERS */
+
+.impact-two{
+    display: none;
+}
+
+.impact{
+    padding:0px 0px 100px 0px;
+    margin-top: -70px;
+}
+
+.impact-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+
+.impact-text > p{
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 15px;
+    color: #800080;
+    background-color: #f2acf2;
+    width: 120px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: -5px;
+}
+
+.the-impact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.the-impact > h3{
+    font-family: "DM Sans";
     font-size: 30px;
-    margin-top: 600px;
+}
+
+.orange{
+    width: 70px;
+    background-color: #f98f0d;
+    height: 4px;
+    margin: 0px auto;
+    margin-top: -20px;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.number h4{
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: #000000;
+    width: 150px;
+    padding: 20px 0px;
+}
+
+.number p{
+    font-family: "DM Sans";
+    font-size: 13px;
+     text-align: center;
+     margin-top: -30px;
+     text-transform: uppercase;
+     font-weight: 700;
+}
+
+
+/* TESTIMONIES */
+.testimony > p{
+    /* background-color: #f2acf2;
+    color: #1e001e; */
+    background-color: #f2acf2;
+    color: #800080;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    font-family: "DM Sans";
+    padding: 13px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0px auto;
 }
 
 .testimonial{
@@ -501,18 +683,44 @@ hr{
     gap: 10px;
 }
 
+.testify img{
+    width: 30px;
+}
+
+.sub-text{
+    font-family: "DM Sans";
+    font-weight: 700;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-text p{
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sub-text span{
+    color: #f98f0d;
+}
+
 .testify{
-    border: 1px solid #8E7ADA;
+    /* border: 1px solid #8E7ADA; */
     min-width: 300px;
     border-radius: 5px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     padding:10px;
-    background-color: #d2caf03b;
+    box-shadow: 0px 0px 5px 1px #53018623;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .testify h3{
-    font-family: "Bevan";
-    font-size: 20px;
+    font-family: "DM Sans";
+    margin-top: auto;
+    font-size: 15px;
 }
 
 .testify p{
@@ -536,18 +744,18 @@ hr{
 .just-text-sec{
     display: flex;
     justify-content: space-between;
-    margin: 50px 0px;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 300px;
+    margin: 0px auto 0px auto;
+    max-width: 1100px;
+    padding: 0px;
     align-items: center;
-    background-color: #252424;
 
 }
 
 .the-link{
     display: flex;
     justify-content: center;
+     background-color: #252424;
+     padding: 0px;
 }
 
 .just-text-sec a{
@@ -555,7 +763,7 @@ hr{
 }
 
 .just-text-sec h3{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 30px;
     width: 200px;
     line-height: 40px;
@@ -565,7 +773,7 @@ hr{
 
 .just-text-sec p{
     width: 500px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     line-height: 30px;
 }
 
@@ -576,11 +784,9 @@ hr{
 .last-sec{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    padding: 0px 10px 0px 10px;
-    font-family: "Epilogue Light";
-    gap: 90px;
-    margin: 0px 55px 0px 40px;
+    font-family: "DM Sans";
+    gap: 0px;
+    margin: 50px auto;
     color: #000000;
 }
 
@@ -593,17 +799,26 @@ hr{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+    position: relative;
+    left: 80px;
+    width:  100px;
 }
 
 .text-logo h3{
-    color: #8E7ADA;
-    font-size: 15px;
+    color: #800080;
+    font-family: "DM Sans";
+    font-size: 13px;
     width: 25px;
     padding-left: 20px;
 }
 
+.text-logo span{
+    color: #000000;
+}
+
+
 .last-sec-list{
-    font-size: 12px;
+    font-size: 10px;
 
 }
 
@@ -615,30 +830,33 @@ hr{
 .last-sec-list a{
     color: #000000;
     text-align: left;
+    gap: 0px;
 }
 
 .heading{
     font-weight: 700;
     font-size: 15px;
+    font-family: "DM Sans";
+    color: #121212;
 }
 
 /* FOOTER */
 footer{
     padding: 0px 60px;
-    font-family: "Epilogue Light";
     font-size: 12px;
     margin-top: 0px;
     color: #000000;
 }
 
 footer p{
-    padding-left: 45px;
+    text-align: center;
+    font-family: "DM Sans";
 }
 
 hr{
-    color: #8E7ADA;
+    color: #800080;
     width: 100%;
-    padding-right: 40px;
+    
 }
 
 
@@ -671,7 +889,7 @@ hr{
         max-width: 460px;
         box-sizing: border-box;
         margin: 0px auto;
-        font-family: "Epilogue Light";
+        font-family: "DM Sans";
         z-index: 60;
         padding: 0px 10px;
         /* background: rgba(255, 255, 255, 0.2);
@@ -682,8 +900,8 @@ hr{
     .logo-two{
         display: flex;
         align-items: center;
-        font-family: "Epilogue Light";
-        color:  #8E7ADA;
+        font-family: "DM Sans";
+        color:  #800080;
         gap: 10px;
     }
 
@@ -713,8 +931,8 @@ hr{
     }
 
     .menu button{
-    font-family: "Epilogue Light";
-    background-color:  #8E7ADA;
+    font-family: "DM Sans";
+    background-color:  #800080;
     color: #ffffff;
     border: 1px solid #ffffff;
     width: 70px;
@@ -731,7 +949,7 @@ hr{
     width: 40px;
     height: 40px;
     padding: 0px;
-    border: 1px solid rgba(142, 122, 218, 0.3);
+    border: 1px solid #800080;
     background-color: #ffffff;
     border-radius: 5px;
 }
@@ -743,8 +961,8 @@ hr{
 .menu .mobile-donate-btn:hover,
 .menu .mobile-menu-toggle:hover{
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
 .mobile-nav-links{
@@ -756,9 +974,9 @@ hr{
     gap: 4px;
     padding: 8px;
     background-color: #ffffff;
-    border: 1px solid rgba(142, 122, 218, 0.18);
+    border: 1px solid rgba(204, 122, 218, 0.18);
     border-radius: 8px;
-    box-shadow: 0px 16px 30px rgba(32, 24, 61, 0.14);
+    box-shadow: 0px 16px 30px rgba(52, 24, 61, 0.14);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -778,7 +996,7 @@ hr{
     align-items: center;
     min-height: 44px;
     padding: 0px 12px;
-    color: #8E7ADA;
+    color: #800080;
     text-decoration: none;
     font-size: 12px;
     font-weight: 700;
@@ -787,19 +1005,19 @@ hr{
 
 .mobile-nav-links a:hover,
 .mobile-nav-links a.active{
-    background-color: rgba(142, 122, 218, 0.1);
+    background-color: rgba(218, 122, 205, 0.1);
 }
 
 .mobile-menu-toggle:focus-visible,
 .mobile-nav-links a:focus-visible{
-    outline: 2px solid #8E7ADA;
+    outline: 2px solid #800080;
     outline-offset: 2px;
 }
 
 #donate-btn:hover{
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
 /* HERO SECTION */
@@ -826,8 +1044,8 @@ hr{
 }
 
 .intro h3{
-    font-family: "Bevan";
-    color: #8E7ADA;
+    font-family: "IntegralCF";
+    color: #ffffff;
     font-size: 40px;
     margin-bottom: 20px;
     line-height: 50px;
@@ -836,7 +1054,7 @@ hr{
 }
 
 .intro span{
-    color: #000000;
+    color: #f98f0d;
 }
 
 .intro p{
@@ -849,46 +1067,43 @@ hr{
     margin-left: 17px;
 }
 
-.btn{
+.hero-btn{
     display: flex;
-    justify-content: center;
+    margin: 0px auto;
     align-items: center;
-    gap: 20px;
 }
 
 .dt-btn{
     width: 100px;
     text-align: center;
-    background-color: #8E7ADA;
+    background-color: #800080;
     color: #ffffff;
-    border: 1px solid #ffffff;
     padding: 12px;
     font-size: 12px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 .dt-btn:hover{
-    background-color: #7256df;
+    background-color: #ffffff;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
 .the-btn{
     width: 100px;
     text-align: center;
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #f98f0d;
     padding: 12px;
     font-size: 12px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 
 .the-btn:hover{
-    background-color: #eeeeee;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    background-color: #f98f0d;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .hero-section img{
@@ -900,93 +1115,168 @@ hr{
 
 /* ABOUT SECTION */
 
+.img-text-bg{
+    display: none;
+}
+
+.img-text-bg-two{
+    background-color: #d3cfe03b;
+    position: relative;
+    margin: 0px;
+    gap: 0px;
+    border-radius: 45px;
+}
+
 .about-two{
     display: grid;
-    margin-top: 50px;
-    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-two > p{
+    background-color: #f2acf2;
+    color: #1e001e;
+    font-family: "DM Sans";
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
+}
+
+.about-two span{
+    color: #9d279d;
 }
 
 .about-two h3{
     text-align: center;
     font-weight: 600;
-    color: #8E7ADA;
-    font-family: "Bevan";
-    font-size: 30px;
-}
-
-
-.img-text-bg{
-    display: none;
-}
-
-
-.img-text-bg-two{
-    background-color: #d2caf03b;
-    display: block;
-    justify-content: center;
+    font-family: "DM Sans";
+    font-size: 25px;
+    max-width: 900px;
     position: relative;
-    margin: 0px;
-    padding: 0px;
-    /* left: 20px; */
-    /* border: 2px solid; */
-    /* margin: -5px; */
-    /* gap: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: -5%;
 }
+
 
 .img-text-two{
-    display: grid;
-    justify-content: space-between;
-    max-width: 350px;
-    /* margin-top: -20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 20px 0px 100px 0px; */
     gap: 0px;
-    /* border: 2px solid blue; */
-    /* padding: 20px 150px 100px 150px; */
-    /* gap: 50px; */
 }
 
 .img-text-two p{
-    position: relative;
-    max-width: 350px;
-    margin: 20px 0px 0px 0px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 15px;
     line-height: 25px;
-    /* border-left: 2px solid #da7ad565;
-    border-right: 2px solid #8E7ADA;
-    border-bottom: 2px solid #8f7bde7f; */
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 5px;
     padding-bottom: 10px;
+    width: 300px;
+    margin: 0px auto;
 }
 
-.p-h-two{
-    /* padding-left: 5px; */
+
+.p-h{
     margin-top: -10px;
-
+    width: 350px;
 }
 
-.p-h-two h4{
-    font-family: "Bevan";
-    color: #252424;
-    text-align: center;
+.p-h h4{
+    font-family: "DM Sans";
     font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
 }
 
-.img-text-two img{
-    /* display: flex; */
-    padding-top: 20px;
-    width:  350px;
-    border: none;
-    border-radius: 10px;
+.first .p-h{
+   width: 348px;
+   margin: 0px auto;
+   padding: 0px;
+   position: relative;
+   left: 5px;
 }
 
-
-/* .second-two{
-    display: flex;
-    flex-direction: column-reverse;
+/* .first img{
+    position: relative;
+    right: 28px;
 } */
 
+.second .p-h{
+    width: 348px;
+   margin: 0px auto;
+   padding: 0px;
+}
+
+/* WHAT WE DO */
+
+.service-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+.what-we-do{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.what-we-do p{
+    color: #800080;
+    background-color: #f2acf2;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 12px;
+    width: 115px;
+    position: relative;
+    left: 35%;
+    font-family: "DM Sans";
+}
+
+
+.providing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0px 50px; */
+    position: relative;
+    right: 20px;
+    margin-bottom: 50px;
+}
+
+.providing span{
+    color: #f98f0d;
+}
+.providing h3{
+    font-weight: 700;
+    font-family: "DM Sans";
+    font-size: 25px;
+    width: 350px;
+    margin-top: -2px;
+    text-align: center;
+    position: relative;
+    right: 15px;
+}
+
+.providing p{
+    font-family: "DM Sans";
+    width: 350px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: -35px;
+}
 
 /* NUMBERS */
 
@@ -999,12 +1289,17 @@ hr{
     padding:100px 0px;
 }
 
-.impact-two> h3{
+.impact-text{
+margin-top: 70px;
+}
+
+.the-impact p{
+    font-size: 12px;
+
+}
+.the-impact > h3{
     text-align: center;
-    font-size: 40px;
-    font-family: "Epilogue Light";
-    color: #8E7ADA;
-    margin-bottom: -5px;
+    width: 300px;
 }
 
 .number-two{
@@ -1036,14 +1331,6 @@ hr{
 
 /* WHAT WE DO */
 
-.what-we-do{
-    text-align: center;
-    font-family: "Epilogue Light";
-    color: #8E7ADA;
-    margin-bottom: -50px;
-    font-size: 40px;
-}
-
 .the-img{
     display: grid;
     justify-content: flex-start;
@@ -1051,6 +1338,7 @@ hr{
     gap: 5px;
     position: relative;
     right: 26px;
+    padding: 0 var(--page-pad) var(--section-gap);
 }
 
 .top{
@@ -1114,7 +1402,6 @@ hr{
     width: 90%;
     height: 205px;
     border-radius: 6px;
-    border: 2px solid blue;
     left: -185px;
 }
 
@@ -1190,7 +1477,7 @@ hr{
     color: #ffffff;
     width: 320px;
     left: 50px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     z-index: 45;
 }
 
@@ -1205,12 +1492,20 @@ hr{
 
 
 /* TESTIMONIES */
-.testimony{
+.testimony > p{
+    /* background-color: #f2acf2;
+    color: #1e001e; */
+    background-color: #f2acf2;
+    color: #800080;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    font-family: "DM Sans";
+    padding: 13px;
+    border-radius: 25px;
     text-align: center;
-    font-family: "Bevan";
-    color: #8E7ADA;
-    font-size: 30px;
-    margin-top: 300px;
+    margin: 0px auto;
+    margin-top: 50px;
 }
 
 .testimonial{
@@ -1224,28 +1519,52 @@ hr{
     gap: 10px;
 }
 
-.testify{
-    border: 1px solid #8E7ADA;
-    min-width: 350px;
-    border-radius: 5px;
-    font-family: "Epilogue Light";
-    padding:10px;
-    background-color: #d2caf03b;
+.testify img{
+    width: 30px;
 }
 
-#first-testifier{
-    margin-left: 50px;
+.sub-text{
+    font-family: "DM Sans";
+    font-weight: 700;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-text p{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    width: 350px;
+}
+
+.sub-text span{
+    color: #f98f0d;
+}
+
+.testify{
+    /* border: 1px solid #8E7ADA; */
+    min-width: 300px;
+    border-radius: 5px;
+    font-family: "DM Sans";
+    padding:10px;
+    box-shadow: 0px 0px 5px 1px #53018623;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .testify h3{
-    font-family: "Bevan";
-    font-size: 20px;
+    font-family: "DM Sans";
+    margin-top: auto;
+    font-size: 15px;
 }
 
 .testify p{
     font-size: 15px;
     line-height: 30px;
 }
+
 
 
 
@@ -1352,7 +1671,7 @@ hr{
     justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     gap: 90px;
     margin: 0px 55px -60px 40px;
     color: #000000;
@@ -1364,15 +1683,13 @@ hr{
 
 .text-logo-two{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    position: relative;
-    right: 100px;
+    justify-content: flex-end;
+    margin-bottom: 50px;;
     align-items: center;
 }
 
 .text-logo-two h3{
-    color: #8E7ADA;
+    color: #800080;
     font-size: 20px;
     width: 25px;
     padding-left: 10px;
@@ -1402,10 +1719,12 @@ hr{
 
 footer{
     padding: 0px 0px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 12px;
     margin-top: 0px;
     color: #000000;
+    margin-top: 20px;
+
 }
 
 footer p{
@@ -1417,6 +1736,7 @@ hr{
     color: #8E7ADA;
     max-width: 350px;
     margin: 0px auto;
+    margin-top: 50px;
 }
 }
 
@@ -1461,8 +1781,8 @@ nav{
 .logo{
     display: flex;
     align-items: center;
-    font-family: "Epilogue Light";
-    color:  #8E7ADA;
+    font-family: "DM Sans";
+    color:  #800080;
     margin: 0px;
     /* margin-left: 25px; */
 }
@@ -1480,7 +1800,7 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 90px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     list-style: none;
     font-size: 13px;
     font-weight: 700;
@@ -1494,9 +1814,9 @@ nav a{
 
 ul a{
     text-decoration: none;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     background-color: #ffffff;
-    color:  #8E7ADA;
+    color:  #000000;
     padding: 0px;
     font-size: 12px;
     cursor: pointer;
@@ -1504,9 +1824,9 @@ ul a{
 }
 
 .home{
-    color:  #8E7ADA;
+    color:  #800080;
     cursor: pointer;
-    margin-bottom: -9px;
+    margin-bottom: px;
 }
 
 .home-border{
@@ -1516,7 +1836,7 @@ ul a{
 }
 
 .border{
-    background-color:  #8E7ADA;
+    background-color:  #800080;
     width: 20px;
     height: 2px;
     margin-left: 8px;
@@ -1525,12 +1845,11 @@ ul a{
 }
 
 nav a button{
-    font-family: "Epilogue Light";
-    background-color:  #8E7ADA;
+    font-family: "DM Sans";
+    background-color:  #800080;
     color: #ffffff;
     border: 1px solid #ffffff;
     width: 100px;
-    border-radius: 5px;
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
@@ -1540,15 +1859,10 @@ nav a button{
 
 #donate-btn:hover{
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
-hr{
-    width: 100%;
-    margin: 0px auto;
-    color: #a7a2a297;
-}
 
 /* HERO SECTION */
 
@@ -1558,10 +1872,6 @@ hr{
     max-width: 90%;
     margin: 0px auto;
     padding: 0px;
-    /* padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 60px;
-    padding-top: 50px; */
     padding-left: 30px;
 }
 
@@ -1571,29 +1881,27 @@ hr{
     padding-top: 30px;
     display: grid;
     justify-content: center;
-    position: relative;
-    right: 220px;
 }
 
 .intro h3{
-    font-family: "Bevan";
-    color: #8E7ADA;
-    font-size: 45px;
+    font-family: "IntegralCF";
+    color: #ffffff;
+    font-size: 35px;
     margin-bottom: 20px;
     line-height: 50px;
-    margin-left: 15px;
-    max-width: 700px;
-    text-align: center;
+    margin-left: 0px;
+    max-width: 500px;
+    text-align: center; 
 }
 
 .intro span{
-    color: #000000;
+    color: #f98f0d;
 }
 
 .intro p{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 15px;
-    color: #121212;
+    color: #e4e4e4;
     line-height: 25px;
     width: 700px;
     padding-bottom: 5px;
@@ -1611,36 +1919,34 @@ hr{
 .dt-btn{
     width: 100px;
     text-align: center;
-    background-color: #8E7ADA;
+    background-color: #800080;
     color: #ffffff;
-    border: 1px solid #ffffff;
     padding: 14px;
     font-size: 12px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 .dt-btn:hover{
-    background-color: #7256df;
+    background-color: #ffffff;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
 .the-btn{
     width: 100px;
     text-align: center;
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #f98f0d;
     padding: 12px;
     font-size: 12px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 
 .the-btn:hover{
-    background-color: #eeeeee;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    background-color: #f98f0d;
+    color: #ffffff;
+    border: 2px solid #f98f0d;
 }
 
 
@@ -1656,19 +1962,18 @@ hr{
 
 /* ABOUT SECTION */
 
-.about-two{
+.about{
     display: grid;
     margin-top: 50px;
     justify-content: center;
 }
 
-.about-two h3{
-    text-align: center;
-    font-weight: 600;
-    color: #8E7ADA;
-    font-family: "Bevan";
-    font-size: 40px;
-    margin-left: 25px;
+.about> h3{
+    width: 800px;
+    margin: 0px auto;
+    left: 0px;
+    padding: 0px 30px;
+    width: 800px;
 }
 
 
@@ -1743,7 +2048,23 @@ hr{
     border-radius: 10px;
 }
 
+.first .p-h{
+    right: 20px;
+    width: 400px;
+}
 
+.first img{
+    right: 0px;
+}
+
+.second .p-h{
+    right: 20px;
+    width: 400px;
+}
+
+.second img{
+    left: 0px;
+}
 /* NUMBERS */
 
 .impact-two{
@@ -1757,8 +2078,8 @@ hr{
 .impact > h3{
     text-align: center;
     font-size: 40px;
-    font-family: "Epilogue Light";
-    color: #8E7ADA;
+    font-family: "DM Sans";
+    color: #800080;
     margin-bottom: -20px;
     margin-right: 400px;
 }
@@ -1773,17 +2094,17 @@ hr{
 }
 
 .number h4{
-    font-family: "Bebas Neue Pro";
-    font-size: 45px;
+    font-family: "DM Sans";
+    font-size: 35px;
     font-weight: 900;
     text-align: center;
-    color: #8E7ADA;
+    color: #000000;
     width: 150px;
     padding: 20px 0px;
 }
 
 .number p{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 13px;
      text-align: center;
      margin-top: -30px;
@@ -1803,6 +2124,11 @@ hr{
     margin-right: 370px;
 }
 
+.what-we-do p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
 .the-img{
     display: grid;
     position: relative;
@@ -1810,6 +2136,7 @@ hr{
     margin-top: -20px;
     z-index: 20px;
     gap: 5px;
+    padding: 0 var(--page-pad) var(--section-gap) !important;
 }
 
 .top{
@@ -1818,6 +2145,7 @@ hr{
     object-fit: cover;
     gap: 7px;
     position: relative;
+
 }
 
 .gradient{
@@ -1935,7 +2263,7 @@ hr{
     color: #ffffff;
     width: 420px;
     left: 50px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     z-index: 45;
 }
 
@@ -1955,7 +2283,7 @@ hr{
     text-align: center;
     font-family: "Bevan";
     color: #8E7ADA;
-    font-size: 40px;
+    font-size: 13px;
     margin-top: 950px;
     margin-right: 380px;
 }
@@ -1976,17 +2304,15 @@ hr{
 }
 
 .testify{
-    border: 1px solid #8E7ADA;
     min-width: 300px;
     border-radius: 5px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     padding:10px;
-    background-color: #d2caf03b;
 }
 
 .testify h3{
-    font-family: "Bevan";
-    font-size: 30px;
+    font-family: "DM sans";
+    font-size: 20px;
 }
 
 .testify p{
@@ -2054,7 +2380,7 @@ hr{
     padding: 0px 10px 0px 10px;
     font-family: "Epilogue Light";
     gap: 90px;
-    margin: 0px 400px 0px 0px;
+    margin: 60px 400px 0px 0px;
     color: #000000;
 }
 

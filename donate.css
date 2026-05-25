@@ -16,17 +16,43 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "IntegralCF";
+    src: url('Assets/fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url('/Assests/fonts/Satoshi-Variable/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url('Assets/fonts/DM-Sans-Font/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
 
 body{
     width: 1280px;
     margin: 0px auto;
-    height: 100vh;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .ngo{
+    /* width: 1280px;
+    margin: 0px auto; */
     display: grid;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .nav-two{
@@ -34,89 +60,233 @@ body{
 }
 
 nav{
-   display: flex;
+    /* max-width: 100%; */
+    display: flex;
     justify-content: safe center;
     align-items: center;
     position: fixed;
     background-color: #ffffff;
     width: 1280px;
-    margin: -10px auto;
+    margin: 0px auto;
     z-index: 60;
+    /* paddingg: 0px 10px 0px 30px; */
     gap: 280px;
+
 }
 
 .logo{
     display: flex;
     align-items: center;
-    font-family: "Epilogue Light";
-    color: #8E7ADA;
+    font-family: "DM Sans";
+    color:  #800080;
+    gap: 50px;
+    /* margin-left: 25px; */
 }
 
 .logo > h3{
-    font-size: 12px;
-    width: 20px;
+    font-size: 13px;
+    width: 50px;
     margin-top: 20px;
+    
 }
 
+.logo span{
+    color: #000000;
+
+}
 nav img{
-    width: 50px;
+    width: 20px;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    gap: 100px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     list-style: none;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 700;
-    
+    position: relative;
+    left: 40px;
 }
 
 ul a{
     text-decoration: none;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     background-color: #ffffff;
-    color: #8E7ADA;
+    color:  #000000;
     padding: 10px;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
     text-align: center;
+    align-items: center;
 }
+
+.home{
+    position: relative;
+    left: 35px;
+}
+
+.vol-btn{
+    position: relative;
+    right: 35px;
+}
+
+.get-btn{
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+}
+
+.cont-btn{
+    position: relative;
+    right: 35px;
+}
+
 
 nav a{
     text-decoration: none;
 }
 
 nav a button{
-    font-family: "Epilogue Light";
-    background-color: #8E7ADA;
+    font-family: "DM Sans";
+    background-color: #800080;
     color: #ffffff;
-    border: none;
+    border: 1px solid #ffffff;
     width: 100px;
-    border-radius: 5px;
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
-
 }
+
+
+
+#vol-btn{
+    position: relative;
+    background-color:  #f98f0d;
+    left: 22px;
+}
+
+#vol-btn:hover{
+    border: 2px solid #f98f0d;
+    background-color: #ffffff;
+    color: #f98f0d;
+}
+ 
 
 #donate-btn:hover{
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
+
+.nav-two{
+    display: none;
+}
+
+/* HERO SECTION */
+
+.donate-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.donate-section img{
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(30%);
+}
+
+.donate-hero-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    color: #ffffff;
+}
+
+.donate-orange{
+    background-color: #f98f0d;
+    width: 150px;
+    height: 3px;
+    margin-bottom: -25px;
+}
+
+.donate-hero-container h3{
+    font-family: "IntegralCF";
+    font-size: 40px;
+}
+
+.donate-hero-container p{
+    font-family: "DM Sans";
+    font-size: 13px;
+    width: 500px;
+    margin-top: -25px;
+}
+
+.only-btn{
+    display: flex;
+    align-items: center;
+}
+
+.only-btn button{
+    width: 100px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.dt-btn{
+    background-color: #800080;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+}
+
+.dt-btn:hover{
+    background-color: #ffffff;
+    color: #800080;
+    border: 2px solid #800080;
+}
+
+.volun-btn{
+    background-color: #ffffff;
+    color: #f98f0d;
+    border: 2px solid #f98f0d;
+}
+
+.volun-btn:hover{
+    background-color: #f98f0d;
+    color: #ffffff;
+    border:2px solid #ffffff;
+}
 
 /* PAYMENT SECTION */
 
 .payment-section{
     display: grid;
     justify-content: center;
-    font-family: "Epilogue Light";
-    padding: 100px 0px;
+    font-family: "DM Sans";
+    padding: 0px 0px;
     background-color: rgba(237, 240, 240, 0.477);
-    margin-top: -10px;
+    margin-top: 50px;
+}
+
+.payment-section > p{
+    text-align: center;
+    margin-top: -20px;
 }
 
 .payment-type{
@@ -124,11 +294,23 @@ nav a button{
 }
 
 .payment-type h3{
-    font-size: 25px;
+    font-size: 30px;
+    width: 600px;
+    margin-top: -3px;
 }
 
-.payment-type p{
-    font-size: 20px;
+.payment-type span{
+    color: #f98f0d;
+}
+
+.payment-type > p{
+    margin-top: 80px;
+    font-size: 13px;
+    background-color: #f2acf2;
+    color: #300130;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
 }
 
 .name-img{
@@ -148,7 +330,7 @@ nav a button{
     justify-content: space-between;
     padding: 20px;
     background-color: #ffffff;
-    border: 3px solid #8d7ada5a;
+    border: 3px solid #800080;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -159,7 +341,7 @@ nav a button{
 }
 
 .btc:hover{
-    background-color: #e8e5f45a;
+    background-color: #ebddeb5a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -182,7 +364,7 @@ nav a button{
 }
 
 .trc:hover{
-    background-color: #e8e5f45a;
+    background-color: #ebddeb5a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -205,7 +387,7 @@ nav a button{
 }
 
 .other:hover{
-    background-color: #e8e5f45a;
+    background-color: #ebddeb5a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -215,14 +397,14 @@ nav a button{
 }
 
 .crypto{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
 }
 
 .crypto button{
-    border: 2px solid #8E7ADA;
+    border: 2px solid #f0e3f0;
     padding: 10px;
     background-color: #ffffff;
-    color: #8E7ADA;
+    color: #800080;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -232,7 +414,7 @@ nav a button{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
 }
 
 .lock img{
@@ -284,13 +466,11 @@ nav a button{
 
 /* LAST SECTION */
 .last-sec{
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    padding: 0px 10px 0px 10px;
-    font-family: "Epilogue Light";
-    gap: 90px;
-    margin: 0px 55px 0px 40px;
+    font-family: "DM Sans";
+    gap: 0px;
+    margin: 50px auto;
     color: #000000;
 }
 
@@ -303,17 +483,26 @@ nav a button{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+    position: relative;
+    left: 80px;
+    width:  100px;
 }
 
 .text-logo h3{
-    color: #8E7ADA;
-    font-size: 15px;
+    color: #800080;
+    font-family: "DM Sans";
+    font-size: 13px;
     width: 25px;
-    margin-left: 15px;
+    padding-left: 20px;
 }
 
+.text-logo span{
+    color: #000000;
+}
+
+
 .last-sec-list{
-    font-size: 12px;
+    font-size: 10px;
 
 }
 
@@ -325,32 +514,38 @@ nav a button{
 .last-sec-list a{
     color: #000000;
     text-align: left;
+    gap: 0px;
 }
 
 .heading{
     font-weight: 700;
     font-size: 15px;
+    font-family: "DM Sans";
+    color: #121212;
 }
 
 /* FOOTER */
 footer{
     padding: 0px 60px;
-    font-family: "Epilogue Light";
     font-size: 12px;
+    margin-top: 0px;
     color: #000000;
 }
 
 footer p{
-    padding-left: 45px;
+    text-align: center;
+    font-family: "DM Sans";
 }
 
 hr{
-    color: #8E7ADA;
+    color: #800080;
     width: 100%;
+    
 }
 
-/* RESPONSIVE DESIGN */
-/* MOBILE */
+
+
+
 /* RESPONSIVE DESIGN */
 /* MOBILE */
 @media (width <= 480px) {
@@ -363,7 +558,139 @@ hr{
         width: 100%;
         overflow-x: hidden;
     } 
+
     .nav-two{
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        background-color: #ffffff;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+        max-width: 460px;
+        box-sizing: border-box;
+        margin: 0px auto;
+        font-family: "Epilogue Light";
+        z-index: 60;
+        padding: 0px 10px;
+    }
+
+    .logo-two{
+        display: flex;
+        align-items: center;
+        font-family: "DM Sana";
+        color: #800080;
+        gap: 10px;
+    }
+
+    .logo-two a{
+        text-decoration: none;
+    }
+
+    .logo-two img{
+        width: 50px;
+    }
+
+    .logo-two h3{
+        font-size: 12px;
+        width: 20px;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu img{
+        width: 20px;
+    }
+
+    .menu button{
+        font-family: "DM Sans";
+        background-color: #800080;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        width: 70px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 9px;
+        cursor: pointer;
+    }
+
+    .menu .mobile-menu-toggle{
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        border: 1px solid rgba(218, 122, 215, 0.3);
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+
+    .menu .mobile-menu-toggle img{
+        width: 20px;
+    }
+
+    .menu .mobile-donate-btn:hover,
+    .menu .mobile-menu-toggle:hover{
+        background-color: #ffffff;
+        color: #800080;
+        border: 2px solid #800080;
+    }
+
+    .mobile-nav-links{
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 10px;
+        right: 10px;
+        display: grid;
+        gap: 4px;
+        padding: 8px;
+        background-color: #ffffff;
+        border: 1px solid rgba(218, 122, 216, 0.18);
+        border-radius: 8px;
+        box-shadow: 0px 16px 30px rgba(61, 24, 56, 0.14);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+    }
+
+    .mobile-nav-open .mobile-nav-links{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0px);
+    }
+
+    .mobile-nav-links a{
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0px 12px;
+        color: #8E7ADA;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+
+    .mobile-nav-links a:hover,
+    .mobile-nav-links a.active{
+        background-color: rgba(142, 122, 218, 0.1);
+    }
+
+    .mobile-menu-toggle:focus-visible,
+    .mobile-nav-links a:focus-visible{
+        outline: 2px solid #800080;
+        outline-offset: 2px;
+    }
+.nav-two{
         display: flex;
         position: fixed;
         top: 0px;
@@ -376,7 +703,7 @@ hr{
         max-width: 460px;
         box-sizing: border-box;
         margin: 0px auto;
-        font-family: "Epilogue Light";
+        font-family: "DM Sans";
         z-index: 60;
         padding: 0px 10px;
         /* background: rgba(255, 255, 255, 0.2);
@@ -387,8 +714,8 @@ hr{
     .logo-two{
         display: flex;
         align-items: center;
-        font-family: "Epilogue Light";
-        color:  #8E7ADA;
+        font-family: "DM Sans";
+        color:  #800080;
         gap: 10px;
     }
 
@@ -418,8 +745,8 @@ hr{
     }
 
     .menu button{
-    font-family: "Epilogue Light";
-    background-color:  #8E7ADA;
+    font-family: "DM Sans";
+    background-color:  #800080;
     color: #ffffff;
     border: 1px solid #ffffff;
     width: 70px;
@@ -436,7 +763,7 @@ hr{
     width: 40px;
     height: 40px;
     padding: 0px;
-    border: 1px solid rgba(142, 122, 218, 0.3);
+    border: 1px solid #800080;
     background-color: #ffffff;
     border-radius: 5px;
 }
@@ -448,8 +775,8 @@ hr{
 .menu .mobile-donate-btn:hover,
 .menu .mobile-menu-toggle:hover{
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
 .mobile-nav-links{
@@ -461,9 +788,9 @@ hr{
     gap: 4px;
     padding: 8px;
     background-color: #ffffff;
-    border: 1px solid rgba(142, 122, 218, 0.18);
+    border: 1px solid rgba(204, 122, 218, 0.18);
     border-radius: 8px;
-    box-shadow: 0px 16px 30px rgba(32, 24, 61, 0.14);
+    box-shadow: 0px 16px 30px rgba(52, 24, 61, 0.14);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -483,7 +810,7 @@ hr{
     align-items: center;
     min-height: 44px;
     padding: 0px 12px;
-    color: #8E7ADA;
+    color: #800080;
     text-decoration: none;
     font-size: 12px;
     font-weight: 700;
@@ -492,27 +819,53 @@ hr{
 
 .mobile-nav-links a:hover,
 .mobile-nav-links a.active{
-    background-color: rgba(142, 122, 218, 0.1);
+    background-color: rgba(218, 122, 205, 0.1);
 }
 
 .mobile-menu-toggle:focus-visible,
 .mobile-nav-links a:focus-visible{
-    outline: 2px solid #8E7ADA;
+    outline: 2px solid #800080;
     outline-offset: 2px;
 }
 
 #donate-btn:hover{
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
+
+/* DONATE SECTION */
+
+.donate-section{
+
+}
+
+.donate-hero-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    color: #ffffff;
+}
+
+.donate-hero-container h3{
+    font-size: 30px;
+}
+
+.donate-hero-container p{
+    font-size: 12px;
+    width: 340px;
+}
 /* PAYMENT SECTION */
 
 .payment-section{
     display: grid;
     justify-content: center;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     padding: 100px 0px;
     background-color: rgba(237, 240, 240, 0.477);
     margin-top: -10px;
@@ -525,7 +878,11 @@ hr{
 }
 
 .payment-type h3{
-    font-size: 30px;
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    left: 17px;
+    width: 350px;
 }
 
 .payment-type p{
@@ -549,7 +906,7 @@ hr{
     justify-content: space-between;
     padding: 20px;
     background-color: #ffffff;
-    border: 3px solid #8d7ada5a;
+    border: 3px solid #c47ada5a;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -560,7 +917,7 @@ hr{
 }
 
 .btc:hover{
-    background-color: #e8e5f45a;
+    background-color: #f0e5f45a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -572,7 +929,7 @@ hr{
     justify-content: space-between;
     padding: 20px;
     background-color: #ffffff;
-    border: 3px solid #8d7ada5a;
+    border: 3px solid #c47ada5a;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -583,7 +940,7 @@ hr{
 }
 
 .trc:hover{
-    background-color: #e8e5f45a;
+    background-color: #f0e5f45a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -595,7 +952,7 @@ hr{
     justify-content: center;
     padding: 20px; 
     background-color: #ffffff;
-    border: 3px solid #8d7ada5a;
+    border: 3px solid #c47ada5a;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -606,7 +963,7 @@ hr{
 }
 
 .other:hover{
-    background-color: #e8e5f45a;
+    background-color: #f0e5f45a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -620,10 +977,10 @@ hr{
 }
 
 .crypto button{
-    border: 2px solid #8E7ADA;
+    border: 2px solid #800080;
     padding: 10px;
     background-color: #ffffff;
-    color: #8E7ADA;
+    color: #800080;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -638,7 +995,7 @@ hr{
 
 .lock img{
     width: 20px;
-    margin-bottom: 4px;
+    margin-top: 20px;
 }
 
 
@@ -672,7 +1029,7 @@ hr{
 }
 
 .explore h3{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     text-align: center;
     font-size: 30px;
     width: 250px;
@@ -683,7 +1040,7 @@ hr{
 
 .explore p{
     width: 350px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     line-height: 30px;
     font-size: 11px;
     text-align: center;
@@ -745,7 +1102,7 @@ hr{
     justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     gap: 90px;
     margin: 0px 55px 0px 40px;
     color: #000000;
@@ -766,7 +1123,7 @@ hr{
 }
 
 .text-logo-two h3{
-    color: #8E7ADA;
+    color: #800080;
     font-size: 20px;
     width: 25px;
     padding-left: 10px;
@@ -796,21 +1153,22 @@ hr{
 
 footer{
     padding: 0px 0px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 12px;
-    margin-top: 0px;
     color: #000000;
 }
 
 footer p{
     position: relative;
-    /* left: 60px; */
+    text-align: center;
+    width: 350px;
+    padding-left: 0px;
 }
 
 hr{
-    color: #8E7ADA;
-    max-width: 350px;
-    margin: 0px auto;
+    color: #000000;
+    /* max-width: 350px; */
+    /* margin: 0px auto; */
 }
 
 }
@@ -843,18 +1201,15 @@ nav{
     position: fixed;
     background-color: #ffffff;
     z-index: 60;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 43px;
     gap: 90px;
-    top: 15px;
-
-
 }
 
 .logo{
     display: flex;
     align-items: center;
-    font-family: "Epilogue Light";
-    color:  #8E7ADA;
+    font-family: "DM Sans";
+    color:  #800080;
     margin: 0px;
     /* margin-left: 25px; */
 }
@@ -872,20 +1227,23 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 90px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     list-style: none;
     font-size: 13px;
     font-weight: 700;
-    
+
 }
 
+nav a{
+    text-decoration: none;
+}
 
 
 ul a{
     text-decoration: none;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     background-color: #ffffff;
-    color:  #8E7ADA;
+    color:  #000000;
     padding: 0px;
     font-size: 12px;
     cursor: pointer;
@@ -893,9 +1251,9 @@ ul a{
 }
 
 .home{
-    color:  #8E7ADA;
+    color:  #000000;
     cursor: pointer;
-    margin-bottom: -9px;
+    margin-bottom: px;
 }
 
 .home-border{
@@ -905,7 +1263,7 @@ ul a{
 }
 
 .border{
-    background-color:  #8E7ADA;
+    background-color:  #800080;
     width: 20px;
     height: 2px;
     margin-left: 8px;
@@ -913,29 +1271,23 @@ ul a{
 
 }
 
-nav a{
-    text-decoration: none;
-}
-
 nav a button{
-    font-family: "Epilogue Light";
-    background-color:  #8E7ADA;
+    font-family: "DM Sans";
+    background-color:  #800080;
     color: #ffffff;
     border: 1px solid #ffffff;
     width: 100px;
-    border-radius: 5px;
     padding: 10px;
     font-size: 12px;
     cursor: pointer;
-    text-decoration: none;
     /* margin-right: 20px; */
     /* margin: 0px; */
 }
 
 #donate-btn:hover{
     background-color: #ffffff;
-    color: #8E7ADA;
-    border: 2px solid #8E7ADA;
+    color: #800080;
+    border: 2px solid #800080;
 }
 
 hr{
@@ -945,26 +1297,26 @@ hr{
 }
 
 
+
 /* PAYMENT SECTION */
 
 .payment-section{
     width: 100%;
     display: grid;
     justify-content: center;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     padding: 100px 0px;
     background-color: rgba(237, 240, 240, 0.477);
     margin-top: -10px;
-    margin-left: 15px;
 }
 
 .payment-type{
     text-align: center;
-    margin-right: 400px;
 }
 
 .payment-type h3{
-    font-size: 25px;
+    font-size: 30px;
+    margin-left: 25px;
 }
 
 .payment-type p{
@@ -988,7 +1340,7 @@ hr{
     justify-content: space-between;
     padding: 20px;
     background-color: #ffffff;
-    border: 3px solid #8d7ada5a;
+    border: 3px solid #da7ad45a;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -999,7 +1351,7 @@ hr{
 }
 
 .btc:hover{
-    background-color: #e8e5f45a;
+    background-color: #f4e5f35a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -1011,7 +1363,7 @@ hr{
     justify-content: space-between;
     padding: 20px;
     background-color: #ffffff;
-    border: 3px solid #8d7ada5a;
+    border: 3px solid #da7ad45a;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -1022,7 +1374,7 @@ hr{
 }
 
 .trc:hover{
-    background-color: #e8e5f45a;
+    background-color: #f4e5f45a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -1034,7 +1386,7 @@ hr{
     justify-content: center;
     padding: 20px; 
     background-color: #ffffff;
-    border: 3px solid #8d7ada5a;
+    border: 3px solid #da7ad45a ;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -1045,7 +1397,7 @@ hr{
 }
 
 .other:hover{
-    background-color: #e8e5f45a;
+    background-color: #f3e5f45a;
     transform: scaleX(1.01);
     transition: 0.2s;
 }
@@ -1055,15 +1407,15 @@ hr{
 }
 
 .crypto{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     margin-right: 400px;
 }
 
 .crypto button{
-    border: 2px solid #8E7ADA;
+    border: 2px solid #800080;
     padding: 10px;
     background-color: #ffffff;
-    color: #8E7ADA;
+    color: #800080;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -1073,7 +1425,7 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
 }
 
 .lock img{
@@ -1096,7 +1448,6 @@ hr{
 
 .just-text-sec{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     margin: 50px 0px;
     padding-left: 40px;
@@ -1112,7 +1463,7 @@ hr{
 }
 
 .just-text-sec h3{
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     font-size: 30px;
     width: 200px;
     line-height: 40px;
@@ -1124,7 +1475,7 @@ hr{
 
 .just-text-sec p{
     width: 500px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     line-height: 30px;
     text-align: center;
     margin-right: 350px;
@@ -1139,14 +1490,14 @@ hr{
     justify-content: center;
     margin-top: 20px;
     padding: 0px 10px 0px 10px;
-    font-family: "Epilogue Light";
+    font-family: "DM Sans";
     gap: 90px;
     margin: 0px 400px 0px 0px;
     color: #000000;
 }
 
 .last-sec img{
-    width: 100px;
+    width: 70px;
 }
 
 .text-logo{
@@ -1154,10 +1505,11 @@ hr{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+    margin-right: 10px;
 }
 
 .text-logo h3{
-    color: #8E7ADA;
+    color: #800080;
     font-size: 15px;
     width: 25px;
     padding-left: 10px;

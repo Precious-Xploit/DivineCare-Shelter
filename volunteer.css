@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "IntegralCF";
+    src: url('Assets/fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url('/Assests/fonts/Satoshi-Variable/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url('Assets/fonts/DM-Sans-Font/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+body{
+    width: 1280px;
+    margin: 0px auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.ngo{
+    /* width: 1280px;
+    margin: 0px auto; */
+    display: grid;
+    justify-content: center;
+}
+
+.nav-two{
+    display: none;
+}
+
+nav{
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: safe center;
+    align-items: center;
+    position: fixed;
+    background-color: #ffffff;
+    width: 1280px;
+    margin: 0px auto;
+    z-index: 60;
+    /* paddingg: 0px 10px 0px 30px; */
+    gap: 280px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans";
+    color:  #800080;
+    gap: 50px;
+    /* margin-left: 25px; */
+}
+
+.logo > h3{
+    font-size: 13px;
+    width: 50px;
+    margin-top: 20px;
+    
+}
+
+.logo span{
+    color: #000000;
+
+}
+nav img{
+    width: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans";
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    left: 40px;
+}
+
+ul a{
+    text-decoration: none;
+    font-family: "DM Sans";
+    background-color: #ffffff;
+    color:  #000000;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+.home{
+    position: relative;
+    left: 35px;
+}
+
+.vol-btn{
+    position: relative;
+    right: 35px;
+}
+
+.get-btn{
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+}
+
+.cont-btn{
+    position: relative;
+    right: 35px;
+}
+
+
+nav a{
+    text-decoration: none;
+}
+
+nav a button{
+    font-family: "DM Sans";
+    background-color: #800080;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 100px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+#vol-btn{
+    position: relative;
+    border: 2px solid #f98f0d;
+    background-color: #ffffff;
+    color: #f98f0d;
+    left: 22px;
+}
+
+#vol-btn:hover{
+    background-color:  #f98f0d;
+    color: #ffffff;
+}
+ 
+
+#donate-btn:hover{
+    background-color: #ffffff;
+    color: #800080;
+    border: 2px solid #800080;
+}
