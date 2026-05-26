@@ -10,7 +10,7 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="Assets/images/ngo_Logo.png" alt="LOGO">
+            <img src="Assets/images/ngo_Logo.webp" alt="LOGO">
             <h3>DIVINECARE <span>SHELTER</span></h3>
             <ul>
                 <a href="index.html"><li class="home">Home</li></a>
@@ -30,14 +30,14 @@
 
     <section class="nav-two">
                 <div class="logo-two">
-                    <img src="Assets/images/ngo_Logo.png" alt="LOGO">
+                    <img src="Assets/images/ngo_Logo.webp" alt="LOGO">
                     <h3>DivineCare <br> Shelter</h3>
                 </div>
 
                 <div class="menu">
                     <a href="donate.html"><button class="mobile-donate-btn">Donate</button></a>
                     <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-links">
-                        <img src="Assets/images/menu-icons.png" alt="" aria-hidden="true">
+                        <img src="Assets/images/menu-icons.webp" alt="" aria-hidden="true">
                     </button>
                 </div>
 
@@ -51,7 +51,7 @@
     </section>
 
     <section class="support-section">
-        <img src="Assets/images/customer-support.png" alt="">
+        <img src="Assets/images/customer-support.webp" alt="">
         <div class="contact-us-details">
             <div class="white"></div>
             <h3>Contact Us Today</h3>
@@ -100,16 +100,16 @@
             </div>
         </div> -->
 
-        <form action="">
+        <form id="contactForm" action="">
             <div class="input-flex">
                 <div class="input-sec">
                     <label for="name">First Name</label>
-                    <input type="text" placeholder="Enter first name" required id="length">
+                    <input type="text" placeholder="Enter first name" value="sly" class="input-first-name" required id="length">
                 </div>
 
                 <div class="input-sec">
                     <label for="name">Last Name</label>
-                    <input type="text" placeholder="Enter last name" required id="length">
+                    <input type="text" placeholder="Enter last name" class="input-last-name" required id="length">
                 </div>
             </div>
             
@@ -117,24 +117,24 @@
 
                 <div class="input-sec">
                 <label for="email">Email</label>
-                <input type="email" placeholder="Enter you email" required id="length">
+                <input type="email" placeholder="Enter you email" class="input-email" required id="length">
              </div>
 
             <div class="input-sec">
                 <label for="tel">Phone Number</label>
-                <input type="tel" placeholder="Enter your phone number" required id="length">
+                <input type="tel" placeholder="Enter your phone number" maxlength="12" class="input-phone-number" required id="length">
             </div>
             </div>
             
             
             <div class="input-sec">
                 <label for="subject">Subject</label>
-                <input type="text" placeholder="Enter subject" id="subject">
+                <input type="text" placeholder="Enter subject" required class="input-subject" id="subject">
             </div>
             
             <div class="input-sec">
                 <label for="message">Message</label>
-                <textarea name="comments" id="message" placeholder="Enter your message" required></textarea>
+                <textarea name="comments" id="message" class="input-message" placeholder="Enter your message" required></textarea>
             </div>
             
             <div class="submit-btn">
@@ -165,7 +165,7 @@
 
             <section class="last-sec" id="contactUs">
                 <div class="text-logo">
-                    <img src="Assets/images/ngo_Logo.png" alt="">
+                    <img src="Assets/images/ngo_Logo.webp" alt="">
                     <h3>DIVINECARE <br>SHELTER</h3>
                 </div>
                 
@@ -311,5 +311,6 @@
             </footer>
         </section>
 	    <script src="Assets/js/mobile-nav.js"></script>
+	    <script src="Assets/js/contact.js"></script>
 	</body>
 	</html>
