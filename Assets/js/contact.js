@@ -1,6 +1,6 @@
 (function(){
     const contactForm = document.querySelector('#contactForm');
-    const businessEmail = 'go@gmail.com'
+    const businessEmail = 'support@divinecareshelter.com'
 
     
     contactForm.addEventListener('submit', (e)=>{
